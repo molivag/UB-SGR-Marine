@@ -1,0 +1,20 @@
+// import './App.css'
+import People from "./components/people"
+import Navigation_menu from "./components/header" 
+import Homepage from "./components/home"
+
+function App() {
+  return(
+    <div className='App'>
+    <Homepage/>
+    <Navigation_menu/>
+    <People />
+
+    </div>
+  )
+
+
+
+}
+
+export default App
