@@ -1,1 +1,25 @@
+:root{
+/*  Color principal global*/
+      background-color: #F5F5DC;  
+}
+
 @import "tailwindcss";
+@theme{
+     --color-UBfothead:	#01204E;
+     --color-UBtitles:	#086375;
+     --color-UBnone:	#bedcd0;
+     --color-UBfondo:	#fbf2e5;
+     --color-UBhover:	#FEAE6F;
+  
+     --color-hoverp_1:	  #028391;
+     --color-backp_1:	  #F6DCAC;
+    /* paleta_1 Combinacion de las tres */
+      --color-extrap_2:	  #222B68;
+    /*  paleta_2 TODO AZUL */
+     --color-txtp_3:	  #01204E;
+      --color-txtp_3:	  #086375;
+     --color-hoverp_3:	  #028391;
+      --color-hoverp_3:	  #bedcd0;
+     --color-backp_3:	  #F6DCAC;
+      --color-backp_3:	  #fbf2e5;
+}
