@@ -1,19 +1,27 @@
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuItems,
+} from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: 'Home', href: '/Home', current: true },
-  { name: 'Team', href: '/People', current: false },
-  { name: 'Projects', href: '/Projects', current: false },
+  { name: "Home", href: "/", current: true },
+  { name: "Team", href: "/People", current: false },
+  { name: "Projects", href: "/Projects", current: false },
+  { name: "Research Groups", href: "/Groups", current: false },
   // { name: 'Calendar', href: '#', current: false },
-]
-
+];
 
 function classNames(...classes: any[]) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
-export default function Navigation_menu() {
+function Navigation_menu() {
   return (
     <Disclosure as="nav" className="bg-gray-800">
       <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -23,17 +31,22 @@ export default function Navigation_menu() {
             <DisclosureButton className="relative inline-flex items-center justify-center p-2 text-gray-400 group rounded-md hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="block size-6 group-data-open:hidden" />
-              <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
+              <Bars3Icon
+                aria-hidden="true"
+                className="block size-6 group-data-open:hidden"
+              />
+              <XMarkIcon
+                aria-hidden="true"
+                className="hidden size-6 group-data-open:block"
+              />
             </DisclosureButton>
           </div>
           <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
             <div className="flex items-center shrink-0">
               <img
                 alt="Your Company"
-		src="../../public/img/TortugaBoba.png" /* https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" */
+                src="img/TortugaBoba.png" /* https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" */
                 className="w-auto h-8"
-		
               />
             </div>
             <div className="hidden sm:ml-6 sm:block">
@@ -42,10 +55,12 @@ export default function Navigation_menu() {
                   <a
                     key={item.name}
                     href={item.href}
-                    aria-current={item.current ? 'page' : undefined}
+                    aria-current={item.current ? "page" : undefined}
                     className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                      'rounded-md px-3 py-2 text-sm font-medium',
+                      item.current
+                        ? "bg-gray-900 text-white"
+                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      "rounded-md px-3 py-2 text-sm font-medium"
                     )}
                   >
                     {item.name}
@@ -71,8 +86,8 @@ export default function Navigation_menu() {
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">Open user menu</span>
                   <img
-		  alt=""
-		  src="../../public/img/bigADN.png" 
+                    alt=""
+                    src="img/bigADN.png"
                     className="rounded-full size-8"
                   />
                 </MenuButton>
@@ -118,10 +133,12 @@ export default function Navigation_menu() {
               key={item.name}
               as="a"
               href={item.href}
-              aria-current={item.current ? 'page' : undefined}
+              aria-current={item.current ? "page" : undefined}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                'block rounded-md px-3 py-2 text-base font-medium',
+                item.current
+                  ? "bg-gray-900 text-white"
+                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                "block rounded-md px-3 py-2 text-base font-medium"
               )}
             >
               {item.name}
@@ -130,6 +147,7 @@ export default function Navigation_menu() {
         </div>
       </DisclosurePanel>
     </Disclosure>
-  )
+  );
 }
+export default Navigation_menu
 
