@@ -34,12 +34,12 @@ function Member( prop : {dataMember:Tmember, key:number}) {
         className="w-full sm:w-50 md:w-75 lg:w-80 xl:w-100 h-auto object-cover rounded-4xl"
 
           // className=" rounded-full w-64 h-64 "
-	src={`../../public/img/team/${prop.dataMember.imageID}.jpg`}
-          alt="Fotografia de Miembro 1"
+	src={`img/team/${prop.dataMember.imageID}.jpg`}
+          alt={`Fotografia de Miembro ${prop.dataMember.name} `}
         />
       </div>
       <div className="col-4 ">
-        <h3>NameMember</h3>
+        <h3>{prop.dataMember.name}</h3>
         <p>
           <em>Category</em>: ssss
         </p>
