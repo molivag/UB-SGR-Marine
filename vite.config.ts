@@ -9,5 +9,8 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  build:{
+    outDir: '_UBsite'
+  }
 })
 
