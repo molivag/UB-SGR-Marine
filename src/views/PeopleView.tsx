@@ -1,13 +1,11 @@
 // import React from "react";
 import { useState } from "react";
-import { Fragment } from "react/jsx-runtime";
-import { team } from "../../public/team";
+import { team } from "../../public/team2";
 import Member from "../components/TeamMember.tsx";
 
 function PeoplePage() {
   const [people, setPeople] = useState(team);
 
-  console.log(team);
   return (
     <div className="mx-auto border-6 border-double container ">
       <section>
@@ -15,44 +13,37 @@ function PeoplePage() {
           Team Members for SGR
         </h1>
 
-        <h2 className="text-4xl font-extrabold text-UBnone">Current Members</h2>
+        <h2 className="mt-10 text-4xl font-extrabold text-UBnone">
+          Current Members
+        </h2>
 
-        <div className=" mb-10 mx-auto grid grid-cols-3 gap-6 gap-y-12 border-4 border-dotted max-w-9/10">
-	
-	{people.map(()=>{
-	  return(
-	  <p>Desde Guitar</p>
-	  )
-	}
-	 )}
+        <div className=" mb-20 mx-auto grid grid-cols-3 gap-6 gap-y-12 border-4 border-dotted max-w-9/10">
+          {people.map((person) => {
+
+            //	if (person.id == 0) {
+            //	  	return() CURRENT
+            //	} else if { person.id==1{
+            //	  	return() FORMER
+            //	} else if { person.id==1{
+            //	  	return() PHD
+            //	}else{
+            //	  	return() BAD FORMAT IN DATABASE PLEASE CHECK
+            //	}
+
+            return( <Member key={person.id} dataMember={person} />
+	    );
+          })}
         </div>
 
         <h2 className="mt-5 text-4xl font-extrabold text-UBnone">
-          Former Members
+	Former Members
         </h2>
-        <div className=" mb-10 mx-auto grid grid-cols-3 gap-6 gap-y-12 border-4 border-dotted max-w-9/10">
-          <Member />
-          <Member />
-          <Member />
-          <Member />
-          <Member />
-          <Member />
-        </div>
+        <div className=" mb-20 mx-auto grid grid-cols-3 gap-6 gap-y-12 border-4 border-dotted max-w-9/10"></div>
 
         <h2 className="mt-5 text-4xl font-extrabold text-UBnone">
           PhD Students
         </h2>
-        <div className=" mb-10 mx-auto grid grid-cols-3 gap-6 gap-y-12 border-4 border-dotted max-w-9/10">
-          <Member />
-          <Member />
-          <Member />
-          <Member />
-          <Member />
-          <Member />
-          <Member />
-          <Member />
-          <Member />
-        </div>
+        <div className=" mb-20 mx-auto grid grid-cols-3 gap-6 gap-y-12 border-4 border-dotted max-w-9/10"></div>
       </section>
     </div>
   );
