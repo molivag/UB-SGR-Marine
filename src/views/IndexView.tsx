@@ -1,14 +1,20 @@
 // import React from "react";
 
 import { Fragment } from "react/jsx-runtime";
+import Seniors from "../components/TeamSenior.tsx"
 
 function IndexPage() {
   return (
-    <Fragment >
-      <h1 className="text-center text-2xl font-bold">
-        Marine Biodiversity and Evolution</h1>
-      <h2 className="text-center">Marine Biodiversity and Evolution (MBE) 2021 SGR 01271</h2>
-      <h3 className="text-center mx-auto">Grup de Recerca de la Generalitat de Catalunya</h3>
+    <Fragment>
+      <h1 className="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-UBtitles md:text-5xl lg:text-6xl ">
+        Marine Biodiversity and Evolution
+      </h1>
+      <h2 className="text-center">
+        Marine Biodiversity and Evolution (MBE) 2021 SGR 01271
+      </h2>
+      <h3 className="text-center mx-auto">
+        Grup de Recerca de la Generalitat de Catalunya
+      </h3>
       <div className="my-8">
         <p>
           The main objective of the research group is to study the biodiversity
@@ -26,7 +32,17 @@ function IndexPage() {
           and communities will face and behave in front of perturbations of
           their environment in the current scenario of global change.
         </p>
+        <div className="mt-20">
+          <img
+            className="mx-auto sm:w-60 md:w-80 lg:w-90 xl:w-120 "
+            // className=" rounded-full w-64 h-64 "
+            //
+            src="../../public/img/imagen1.png"
+            alt="Marine Biodiversity and Evolution"
+          />
+        </div>
       </div>
+      <Seniors/>
     </Fragment>
   );
 }
