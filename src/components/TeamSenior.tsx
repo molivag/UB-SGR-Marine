@@ -1,16 +1,10 @@
 import { useState } from "react";
 import { team } from "../../public/team2";
 
-// type Tmember = {
-//   id: number;
-//   name: string;
-//   image: string;
-//   description: string;
-//   category: string;
-// };
 
 function Seniors() {
   const [people] = useState(team);
+
   return (
     <div className="py-10 sm:py-10">
       <div className="mx-auto grid-rows-2 max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
