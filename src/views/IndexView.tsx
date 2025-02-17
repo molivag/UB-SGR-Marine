@@ -37,7 +37,7 @@ function IndexPage() {
             className="mx-auto sm:w-60 md:w-80 lg:w-90 xl:w-120 "
             // className=" rounded-full w-64 h-64 "
             //
-            src="../../public/img/imagen1.png"
+            src="/img/imagen1.png"
             alt="Marine Biodiversity and Evolution"
           />
         </div>
