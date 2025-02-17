@@ -9,8 +9,26 @@ function PeoplePage() {
   return (
     <div className="mx-auto border-6 border-double container ">
       <section>
-        <h1 className="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-UBtitles md:text-5xl lg:text-6xl ">
-          Team Members for SGR
+      <div className="grid grid-cols-2">
+	<div className="border-8 border-dotted border-green-800 mt-5">
+	<h1 className="py-20">FOTO Departamento</h1>
+      	</div>
+	<div className="mt-5">
+      <aside>
+        <h1 className=" mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-UBtitles md:text-5xl lg:text-6xl ">
+          The SGR MBE TEAM
+        </h1>
+	<p className="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur tempora sit dignissimos sint natus! Exercitationem tempora necessitatibus possimus cumque, omnis incidunt mollitia quia excepturi ad asperiores provident iure quis. Rerum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aut unde provident, ullam nostrum nulla natus eaque harum porro sequi. Nostrum beatae quo eaque quidem veniam eos voluptas iure dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ab explicabo aliquam voluptatum. Dolores soluta voluptas temporibus quis. Sunt debitis consequuntur quidem. Possimus veritatis deleniti, culpa neque non quo facilis?</p> 
+
+	<p className="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repellat non alias facere, corporis cum consequuntur ratione officiis possimus. Voluptas mollitia voluptates voluptatem aut iusto ex voluptate odit porro ullam!Odio officiis nam error eaque debitis at. Ad optio similique distinctio ipsa, natus recusandae delectus vel ut sed ab rerum iusto dolorum praesentium unde nihil error illum commodi eligendi. Ab?</p>
+	<p className="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur tempora sit dignissimos sint natus! Exercitationem tempora necessitatibus possimus cumque, omnis incidunt mollitia quia excepturi ad asperiores provident iure quis. Rerum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aut unde provident, ullam nostrum nulla natus eaque harum porro sequi. Nostrum beatae quo eaque quidem veniam eos voluptas iure dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ab explicabo aliquam voluptatum. Dolores soluta voluptas temporibus quis. Sunt debitis consequuntur quidem. Possimus veritatis deleniti, culpa neque non quo facilis?</p> 
+
+	<p className="mb-4">LoTerem ipsum dolor sit amet consectetur adipisicing elit. Expedita repellat non alias facere, corporis cum consequuntur ratione officiis possimus. Voluptas mollitia voluptates voluptatem aut iusto ex voluptate odit porro ullam!Odio officiis nam error eaque debitis at. Ad optio similique distinctio ipsa, natus recusandae delectus vel ut sed ab rerum iusto dolorum praesentium unde nihil error illum commodi eligendi. Ab?</p>
+      </aside>
+	</div>
+      </div>
+        <h1 className="mt-30 mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-UBtitles md:text-5xl lg:text-6xl ">
+          Team Members of SGR MBE
         </h1>
 
         <h2 className="mt-10 text-4xl font-extrabold text-UBnone">
