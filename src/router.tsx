@@ -7,6 +7,17 @@ import PeoplePage from "./views/PeopleView";
 import ProjectsPage from "./views/ProjectsView";
 import GroupPage from "./views/GroupsView";
 
+import "preline/preline";
+import { IStaticMethods } from "preline/preline";
+declare global {
+  interface Window {
+    HSStaticMethods: IStaticMethods;
+  }
+}
+
+
+
+
 function AppRouter() {
   return (
     <BrowserRouter>
