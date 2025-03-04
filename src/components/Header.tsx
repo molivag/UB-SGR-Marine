@@ -1,4 +1,4 @@
-import MoveImages from "./Carousel";
+// import MoveImages from "./Carousel";
 import Navigation_menu from "./Navigation";
 import SwipImages from "./SwiperComp";
 
