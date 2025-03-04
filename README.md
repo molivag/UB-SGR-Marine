@@ -1,50 +1,62 @@
-# React + TypeScript + Vite
+# Website of SGR Marine Biodiversity and Evolution of The University of Barcelona
+### (Powered by React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Explaining team `member` updates
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+If you want to update the status of one of the team member you have to look at members' database.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- The `member` object has the following attributes:
+```ts
+type Tmember = {
+    id:         number;
+    senior:     string;
+    current:    boolean;
+    name:       string;
+    category:   string;
+    department: string;
+    group:      string;
+    email:      string;
+    orcid:      string;
+    scholar:    string;
+    website:    string;
+    socialmedia:string;
+    imageID:    string;
+    description:string;
+};
 ```
+The `current` attribute must be changed as follows:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```ts
+// For current members:
+Current: TRUE  
+// For past members:
+Current: FALSE
 ```
+The `team` section has the following structure:
+```html
+<h1>Current Members</h1>
+
+    For members with Current attribute: "TRUE"
+
+<h1>Former Members</h1>   
+
+   For members with Current attribute: "FALSE"
+
+
+<h1>PhD Students</h1>   
+   For members with Current attribute: "TRUE"  + category: "PhD Student"
+
+```
+The proper modification of `current` attribute will locate the corresponding member in one of the three groups.
+
+## How to access to the members' database?
+Through secure shell connection
+```shell
+ssh username@websitedomain.ub 
+```
+Then, edit the `current` attribute in database file via:
+```shell
+nano public/team.ts            
+```
+Write the changes and close the file. The update will take place automatically.
