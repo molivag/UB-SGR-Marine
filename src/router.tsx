@@ -6,6 +6,7 @@ import IndexPage from "./views/IndexView";
 import PeoplePage from "./views/PeopleView";
 import ProjectsPage from "./views/ProjectsView";
 import GroupPage from "./views/GroupsView";
+import ContactPage from "./views/ContactView";
 
 import "preline/preline";
 import { IStaticMethods } from "preline/preline";
@@ -27,6 +28,7 @@ function AppRouter() {
           <Route path="People" element={<PeoplePage />} />
           <Route path="Projects" element={<ProjectsPage />} />
           <Route path="Groups" element={<GroupPage />} />
+          <Route path="Contact" element={<ContactPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
