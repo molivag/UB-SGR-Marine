@@ -333,4 +333,23 @@ export const team: Tmember[] = [
     description:
       "Driven by a deep fascination for the ocean and a passion for protecting our planet, I am dedicated to understanding and improving marine health. As a biologist specialising in Ecology, Management, and Restoration of the Natural Environment, I am pursuing a PhD focused on marine debris in Antarctica. My research explores its abundance, sources, and the microorganisms colonising plastics, aiming to contribute to the conservation of this unique and fragile ecosystem.",
   },
+    {
+    id: 19,
+    senior: "yes",
+    current: true,
+    name: "Conxita Avila",
+    category: "Full Professor",
+    department: "Biologia Evolutiva, Ecologia i Ciències Ambientals",
+    group: "Benthic ecology",
+    email: "conxita.avila@ub.edu",
+    orcid: "https://orcid.org/0000-0002-5489-8376",
+    scholar:
+      "https://scholar.google.es/citations?user=hI1auqsAAAAJ&hl=es",
+    website:
+      " ",
+    socialmedia: "www.linkedin.com/in/pere-monràs-i-riera-6258a914b",
+    imageID: "conxitaavi",
+    description:
+      " ",
+  },
 ];
