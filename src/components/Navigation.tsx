@@ -14,6 +14,7 @@ const navigation = [
   { name: "Team", href: "/People", current: false },
   { name: "Projects", href: "/Projects", current: false },
   { name: "Research Groups", href: "/Groups", current: false },
+  { name: "Contact", href: "/Contact", current: false },
   // { name: 'Calendar', href: '#', current: false },
 ];
 
