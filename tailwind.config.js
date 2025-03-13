@@ -1,6 +1,7 @@
+/** @type {import('tailwindcss').Config} */
+
 const flowbite = require("flowbite-react/tailwind");
 
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html", 
@@ -10,12 +11,18 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily:{
+	Montserrat:["Montserrat", "sans-serif"],
+	Barlow: ["Barlow", "sans-serif"],
+
+      },
       colors: {
 	'UBfoothead':'#01204e',
 	'UBtitles':'#086375',
 	'UBnone':'#bedcd0',
 	'UBfondo': '#fbf2e5',
-	'UBhover':'#feae6f'
+	'UBop1':'#7A3B69',
+	'UBop2':'#5A746E',
       },
     },
   },

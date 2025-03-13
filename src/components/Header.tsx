@@ -1,5 +1,5 @@
 // import MoveImages from "./Carousel";
-import Navigation_menu from "./Navigation";
+// import Navigation_menu from "./Navigation";
 import SwipImages from "./SwiperComp";
 
 // Import Swiper styles
@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import '../styles/styles.css';
+import MenuBar from "./NavigationBar";
 
 
 function HeaderComp() {
@@ -18,8 +19,9 @@ function HeaderComp() {
           {/* <MoveImages /> */}
 	  <SwipImages/>
         </div>
-        <div>
-          <Navigation_menu />
+        <div className="bg-UBfoothead">
+          {/* <Navigation_menu /> */}
+	  <MenuBar/>
         </div>
       </div>
     </header>
