@@ -9,7 +9,6 @@
 
 :root {
   /*  Color principal global*/
-  background-color:  #fbf2e5;
   /* <body class="d-flex flex-column h-100"> */
 }
 
@@ -28,8 +27,9 @@
 
 
 body {
-  @apply font-Barlow !important;
+  @apply font-Montserrat !important;
   @apply text-base !important;
+  background-color:  #fbf2e5 !important;
 }
 
 
