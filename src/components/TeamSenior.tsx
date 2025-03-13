@@ -6,8 +6,8 @@ function Seniors() {
 
   return (
     <div className="py-10 sm:py-10">
-      <div className="mx-auto grid-rows-2 max-w-7xl gap-20 lg:px-8 xl:grid-cols-3">
-        <div className="border-8 border-red-800 border-double ">
+      <div className="mx-auto grid-rows-2 max-w-7xl gap-20 xl:grid-cols-3">
+        <div>
           <h2 className="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">
             Senior Members
           </h2>
@@ -55,7 +55,7 @@ function Seniors() {
         <ul
           // Aqui van la clase para el numero de columnas
           role="list"
-          className="border-8 border-double grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3 xl:col-span-2"
+          className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3 xl:col-span-2"
         >
           {people.map((person) => {
             if (person.category === "Senior") {
