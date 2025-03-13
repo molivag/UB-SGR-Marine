@@ -16,9 +16,6 @@ declare global {
   }
 }
 
-
-
-
 function AppRouter() {
   return (
     <BrowserRouter>
@@ -27,7 +24,7 @@ function AppRouter() {
           <Route path="/" element={<IndexPage />} index />
           <Route path="People" element={<PeoplePage />} />
           <Route path="Projects" element={<ProjectsPage />} />
-          <Route path="Groups" element={<GroupPage />} />
+          <Route path="Research" element={<GroupPage />} />
           <Route path="Contact" element={<ContactPage />} />
         </Route>
       </Routes>
