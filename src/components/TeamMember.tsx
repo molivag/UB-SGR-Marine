@@ -1,25 +1,17 @@
 // function Member({props}){    ----> entre llaves es desctructuring
 import { FaGoogleScholar } from "react-icons/fa6";
 import { FaOrcid } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+import Tmember from "../types/Tmember";
 
-type Tmember = {
-  id: number;
-  current: boolean;
-  name: string;
-  category: string;
-  department: string;
-  group: string;
-  email: string;
-  orcid: string;
-  scholar: string;
-  website: string;
-  socialmedia: string;
-  imageID: string;
-  description: string;
-};
+import { FaEnvelope } from "react-icons/fa";
 
 // aqui lo que hacemos es NO desestructurar el objeto prop que tiene las propiedas member(que es un objeto) y key que es un numero
-function Member(prop: { dataMember: Tmember; key: number }) {
+function Member(prop: {
+  dataMember: Tmember;
+  key: number;
+  onClick: () => void;
+}) {
   // o bein podria desestructurarlo como:
   // function Member( {Name_prop, key}: {Name_prop:Tmember, key:number}) {
   // -----Es decir en el caso de desestructurar el prop, el nombre que le pongamos a
@@ -27,45 +19,66 @@ function Member(prop: { dataMember: Tmember; key: number }) {
   // *** Al desestructurar props, los nombres de las variables deben coincidir con las claves del objeto props recibido desde el componente padre y con las definiciones en el tipo de TypeScript.***
 
   return (
-    <div>
+    <div className="border-8 border-dashed border-purple-600">
       {/* <div className="bg-blue-50 grid grid-row-2 gap-4"> */}
-      <div className="py-3 w-full max-w-full">
+      <div className=" border-4 border-dotted border-red-600 relative inline-block group">
         <img
-          className="mx-auto w-32  sm:w-44 md:w-48 lg:w-56  xl:w-64 h-auto object-cover rounded-full for-small for-middle"
-          // className=" rounded-full w-64 h-64 "
+          className="w-32 sm:w-44 md:w-48 lg:w-56  xl:w-64 
+	  rounded-3xl for-small for-middle 
+	  shadow-lg 
+	  border-4 border-indigo-600
+	  transition-transform duration-300 transform 
+	  group-hover:scale-105"
           src={`img/team/${prop.dataMember.imageID}.jpg`}
           alt={`Photo of ${prop.dataMember.name} `}
         />
+        <div
+          className="absolute inset-0 rounded-3xl 
+	  bg-black bg-opacity-50 flex items-center 
+	  justify-center opacity-0 group-hover:opacity-100
+	  transition-opacity duration-300 cursor-pointer"
+          onClick={prop.onClick}
+        >
+          <span className="text-white text-2xl font-bold">View Bio</span>
+        </div>
       </div>
+
       <div className="col-4 ">
-        <h3>{prop.dataMember.name}</h3>
-        <p>
-          <em>Category</em>: {prop.dataMember.category}
-        </p>
+        <h3 className="h3member">{prop.dataMember.name}</h3>
+        <h4 className="h4member mb-3">{prop.dataMember.category}</h4>
         <p>
           <em>Department</em>: {prop.dataMember.department}
         </p>
         <p>
           <em>Research Group</em>: {prop.dataMember.group}
         </p>
-        <p>
-          <em>e-mail</em>: {prop.dataMember.email}
-        </p>
-        <div className="flex gap-x-2 mb-4">
+        {prop.dataMember.email && (
+          <a
+            href={`mailto:${prop.dataMember.email}`}
+            className="flex items-center gap-2"
+          >
+            <FaEnvelope size={18} className="text-UBfoothead" />
+            <span className="text-gray-600 hover:text-orange-500">
+              {prop.dataMember.email}
+            </span>
+          </a>
+        )}
+
+        <div className="flex gap-x-2 mb-4 mt-4">
           <a
             href={`${prop.dataMember.orcid}`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaOrcid />
+            <FaOrcid size={30} className="text-UBtitles" />
           </a>
           <a href="">
-            <FaGoogleScholar />
+            <FaGoogleScholar size={30} className="text-UBtitles" />
           </a>
         </div>
-        <p>
-          <em>Bio</em>: {prop.dataMember.description}
-        </p>
+        {/* <p> */}
+        {/*   <em>Bio</em>: {prop.dataMember.description} */}
+        {/* </p> */}
       </div>
     </div>
   );
