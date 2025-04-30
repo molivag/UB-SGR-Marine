@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaOrcid, FaTwitter, FaEnvelope } from "react-icons/fa";
+
+import { FaOrcid, FaInstagram, FaEnvelope, FaBluesky, FaGoogleScholar, FaSquareInstagram } from "react-icons/fa6";
 import Tmember from "../types/Tmember";
 
 type DrawerProps = {
@@ -33,7 +34,7 @@ function MemberDrawer({ isOpen, onClose, member }:DrawerProps) {
           >
             <button
               onClick={onClose}
-              className="text-gray-500 hover:text-black text-2xl absolute top-4 right-4"
+              className="text-gray-500 hover:text-black text-7xl absolute top-0 right-3"
             >
               &times;
             </button>
@@ -47,8 +48,8 @@ function MemberDrawer({ isOpen, onClose, member }:DrawerProps) {
               <h2 className="h3member font-bold">{member.name}</h2>
               <p className="text-sm text-gray-500 mb-4">{member.category}</p>
 
-              <p className="text-gray-700 text-sm leading-relaxed mb-6">
-                {member.description}
+              <p className="text-gray-900 text-md leading-relaxed mb-6 whitespace-pre-line text-justify">
+	      {member.description}
               </p>
 
               {/* Redes sociales */}
@@ -58,19 +59,39 @@ function MemberDrawer({ isOpen, onClose, member }:DrawerProps) {
                     href={member.scholar}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-green-600 hover:text-blue-800"
+                    className="text-purple-600 hover:text-purple-800"
                   >
-                    <FaOrcid size={20} />
+		  <img src="../../public/img/Insta.svg"   className="w-7 h-7 hover:grayscale transition duration-300 cursor-pointer"></img>
                   </a>
                 )}
-                {member.socialmedia && (
+                {member.scholar && (
                   <a
-                    href={member.socialmedia}
+                    href={member.scholar}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-700 hover:text-blue-900"
+                  >
+                    <FaGoogleScholar size={30} />
+                  </a>
+                )}
+                {member.scholar && (
+                  <a
+                    href={member.scholar}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-600 hover:text-green-800"
+                  >
+                    <FaOrcid size={30} />
+                  </a>
+                )}
+                {member.socialmedia_BSKY && (
+                  <a
+                    href={member.socialmedia_BSKY}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sky-500 hover:text-sky-700"
                   >
-                    <FaTwitter size={20} />
+                    <FaBluesky size={30} />
                   </a>
                 )}
                 {member.email && (
@@ -78,7 +99,7 @@ function MemberDrawer({ isOpen, onClose, member }:DrawerProps) {
                     href={`mailto:${member.email}`}
                     className="text-gray-600 hover:text-gray-800"
                   >
-                    <FaEnvelope size={20} />
+                    <FaEnvelope size={30} />
                   </a>
                 )}
               </div>
