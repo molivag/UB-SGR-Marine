@@ -1,6 +1,6 @@
 // import React from "react";
 import { useState } from "react";
-import { team } from "../../public/team2";
+import { team } from "../../data/team2";
 import Tmember from "../types/Tmember";
 import Member from "../components/TeamMember.tsx";
 import MemberDrawer from "../components/TeamMemberDrawer.tsx"
