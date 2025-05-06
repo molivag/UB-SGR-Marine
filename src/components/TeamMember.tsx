@@ -19,50 +19,54 @@ function Member(prop: {
   // *** Al desestructurar props, los nombres de las variables deben coincidir con las claves del objeto props recibido desde el componente padre y con las definiciones en el tipo de TypeScript.***
 
   return (
-    <div className="border-8 border-dashed border-purple-600">
+    <div className="border-8 border-dashed border-black">
       {/* <div className="bg-blue-50 grid grid-row-2 gap-4"> */}
-      <div className=" border-4 border-dotted border-red-600 relative inline-block group">
-        <img
-          className="w-32 sm:w-44 md:w-48 lg:w-56  xl:w-64 
-	  rounded-3xl for-small for-middle 
-	  shadow-lg 
-	  border-4 border-indigo-600
-	  transition-transform duration-300 transform 
-	  group-hover:scale-105"
-          src={`img/team/${prop.dataMember.imageID}.jpg`}
-          alt={`Photo of ${prop.dataMember.name} `}
-        />
-        <div
-          className="absolute inset-0 rounded-3xl 
-	  bg-black bg-opacity-50 flex items-center 
-	  justify-center opacity-0 group-hover:opacity-100
-	  transition-opacity duration-300 cursor-pointer"
-          onClick={prop.onClick}
-        >
-          <span className="text-white text-2xl font-bold">View Bio</span>
-        </div>
+      <div className="flex justify-center border-4 border-dotted border-red-600">
+	<div className="flex justify-center relative group">
+	  <img
+            className="w-32 sm:w-44 md:w-48 lg:w-56  xl:w-64 
+	    rounded-3xl for-small for-middle 
+	    shadow-lg 
+	    border-4 border-indigo-600
+	    transition-transform duration-300 transform 
+	    group-hover:scale-105"
+            src={`img/team/${prop.dataMember.imageID}.jpg`}
+            alt={`Photo of ${prop.dataMember.name} `}
+          />
+          <div
+            className="absolute inset-0 rounded-3xl 
+	    bg-black bg-opacity-50 flex items-center 
+	    justify-center opacity-0 group-hover:opacity-100
+	    transition-opacity duration-300 cursor-pointer"
+            onClick={prop.onClick}
+          >
+            <span className="text-white text-2xl font-bold">View Bio</span>
+	  </div>
+	</div>
       </div>
 
-      <div className="col-4 ">
+      <div className="flex flex-col items-center col-4 border-4 border-red-800">
         <h3 className="h3member">{prop.dataMember.name}</h3>
         <h4 className="h4member mb-3">{prop.dataMember.category}</h4>
-        <p>
-          <em>Department</em>: {prop.dataMember.department}
-        </p>
-        <p>
-          <em>Research Group</em>: {prop.dataMember.group}
-        </p>
-        {prop.dataMember.email && (
-          <a
-            href={`mailto:${prop.dataMember.email}`}
-            className="flex items-center gap-2"
-          >
-            <FaEnvelope size={18} className="text-UBfoothead" />
-            <span className="text-gray-600 hover:text-orange-500">
-              {prop.dataMember.email}
-            </span>
-          </a>
-        )}
+	<div>
+	  <p>
+            <em>Department</em>: {prop.dataMember.department}
+          </p>
+          <p>
+            <em>Research Group</em>: {prop.dataMember.group}
+          </p>
+          {prop.dataMember.email && (
+            <a
+              href={`mailto:${prop.dataMember.email}`}
+              className="flex items-center gap-2"
+            >
+              <FaEnvelope size={18} className="text-UBfoothead" />
+              <span className="text-gray-600 hover:text-orange-500">
+                {prop.dataMember.email}
+              </span>
+            </a>
+          )}
+	</div>
 
         <div className="flex gap-x-2 mb-4 mt-4">
           <a
@@ -76,9 +80,6 @@ function Member(prop: {
             <FaGoogleScholar size={30} className="text-UBtitles" />
           </a>
         </div>
-        {/* <p> */}
-        {/*   <em>Bio</em>: {prop.dataMember.description} */}
-        {/* </p> */}
       </div>
     </div>
   );
