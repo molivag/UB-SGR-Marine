@@ -9,7 +9,9 @@ type Tmember = {
   orcid: string;
   scholar: string;
   website: string;
-  socialmedia: string;
+  socialmedia_INSTA: string;
+  socialmedia_IN: string;
+  socialmedia_BSKY: string;
   imageID: string;
   description: string;
 };
