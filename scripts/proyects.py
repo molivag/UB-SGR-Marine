@@ -4,16 +4,16 @@ import re
 import os
 
 # Archivos de entrada y salida
-INPUT_FILE = "../data/teamDB2.xlsx"     # Archivo Excel o CSV con nuevos miembros
-OUTPUT_FILE = "../data/team2_final.ts"        # Archivo donde se guardan los miembros
+INPUT_FILE = "../data/projectsWEB.xlsx"     # Archivo Excel con informacion proyectos 
+OUTPUT_FILE = "../data/projects.ts"        # Archivo donde se guardan los proyectos
 
 
 def ts_to_json_compatible(ts_string):
-    """Convierte el contenido de team.ts a algo que se pueda leer como JSON."""
+    """Convierte el contenido de projects.ts a algo que se pueda leer como JSON."""
     import re, json
 
     # Extrae solo la parte que es un array
-    match = re.search(r"export const team: Tmember\[] = (\[.*?\]);", ts_string, re.DOTALL)
+    match = re.search(r"export const projects: Tproject\[] = (\[.*?\]);", ts_string, re.DOTALL)
     if not match:
         return []
 
@@ -29,24 +29,8 @@ def ts_to_json_compatible(ts_string):
         return []
 
 
-
-# def read_existing_ts_file(output_file):
-#     """Lee el archivo TypeScript existente y devuelve la lista de miembros actuales."""
-#     if not os.path.exists(output_file):
-#         return []  # Si el archivo no existe, se asume que no hay datos previos
-
-#     with open(output_file, "r", encoding="utf-8") as f:
-#         content = f.read()
-
-#     # Extraer el array de miembros usando regex
-#     match = re.search(r"export const team: Tmember\[] = (\[.*\]);", content, re.DOTALL)
-#     if match:
-#         existing_data = json.loads(match.group(1))
-#         return existing_data
-#     return []
-
 def read_existing_ts_file(output_file):
-    """Lee el archivo TypeScript existente y extrae la lista de miembros."""
+    """Lee el archivo TypeScript existente y extrae la lista de proyectos."""
     if not os.path.exists(output_file):
         return []  # Si no existe, retornar lista vacía
 
@@ -64,7 +48,7 @@ def read_excel_data(file):
         raise ValueError("Formato de archivo no compatible. Usa .xlsx o .csv")
 
     # Rellenar valores vacíos en la columna 'current' con False antes de convertir a booleano
-    df["current"] = df["current"].fillna(False).astype(bool)
+    # df["current"] = df["current"].fillna(False).astype(bool)
 
     df = df.fillna(" ")
 
@@ -82,40 +66,50 @@ def format_value(key, value):
     """Formatea los valores correctamente según su tipo esperado en TypeScript."""
     if key == "id":
         return str(value)
-    if key == "current":
-        return "true" if value else "false"
+    # if key == "current":
+        # return "true" if value else "false"
     if isinstance(value, str):
         value = value.replace("`", "\\`")  # Escapar backticks por si acaso
-        if key == "description":
+        if key == "summary":
             return f"`{value}`"  # Usar template literal con saltos de línea incluidos
         else:
             return f'"{value}"'
+
+        
+    if key=="start":
+      #     "agregar aqui una instruccion para detectar guion - en fecha para forzar que vaya ese formato de fecha"
+      #     "sino se encuentra el - en la fecha, omitir ese campo del exccel y notificar via mensaje en terminal"
+      return print(value)
+
     return str(value)
 
 
 def format_ts_data(data):
     """Formatea los datos en la estructura de TypeScript con tipos correctos."""
-    ts_header = '''type Tmember = {
+    ts_header = '''type Tproject = {
   id: number;
-  senior: string;
-  current: boolean; //1-> Current; 2-> Former; 3->PhD Student
-  name: string;
-  category: string;
-  department: string;
-  group: string;
   email: string;
-  orcid: string;
-  scholar: string;
-  website: string;
-  socialmedia_INSTA: string;
-  socialmedia_IN: string;
-  socialmedia_BSKY: string;
-  imageID: string;
-  description: string;
+  researcher: string;
+  piproject: string;
+  nameProject: string;
+  projectID: string;
+  start: string;
+  end: string;
+  summary: string;
+  websiteProject: string;
+  fundingAgency: string;
+  socialNetwork_x: string;
+  socialNetwork_bsky: string;
+  socialNetwork_inst: string;
+  imageID_logo: string;
+  imageID_FunAgen: string;
+  imageID_ex1: string;
+  imageID_ex2: string;
+  imageID_ex3: string;
 };
 
 '''
-    ts_data = "export const team: Tmember[] = [\n"
+    ts_data = "export const projects: Tproject[] = [\n"
     
     for member in data:
         ts_data += "  {\n"
@@ -129,13 +123,13 @@ def update_ts_file(new_data, output_file):
     """Lee el archivo existente, agrega los nuevos datos y actualiza el archivo TypeScript."""
     existing_data = read_existing_ts_file(output_file)
 
-    # Filtrar solo los nuevos miembros que no están en el archivo actual (según ID)
+    # Filtrar solo los nuevos proyectos que no están en el archivo actual (según ID)
     existing_ids = {member["id"] for member in existing_data}
     new_data_filtered = [member for member in new_data if member["id"] not in existing_ids]
 
     # Si no hay datos nuevos, no actualizar el archivo
     if not new_data_filtered:
-        print("No hay nuevos miembros para agregar.")
+        print("No hay nuevos proyectos para agregar.")
         return
 
     # Combinar datos existentes con los nuevos
@@ -146,7 +140,7 @@ def update_ts_file(new_data, output_file):
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(formatted_data)
 
-    print(f"Archivo {output_file} actualizado con {len(new_data_filtered)} nuevos miembros.")
+    print(f"Archivo {output_file} actualizado con {len(new_data_filtered)} nuevos proyectos.")
 
 def main():
     """Ejecuta el script de conversión y actualización."""
