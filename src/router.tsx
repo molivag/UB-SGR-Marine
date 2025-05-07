@@ -24,8 +24,8 @@ function AppRouter() {
           <Route path="/" element={<IndexPage />} index />
           <Route path="People" element={<PeoplePage />} />
           <Route path="Projects" element={<ProjectsPage />} />
-          <Route path="Research" element={<GroupPage />} />
-          <Route path="Contact" element={<ContactPage />} />
+          {/* <Route path="Research" element={<GroupPage />} /> */}
+          {/* <Route path="Contact" element={<ContactPage />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
