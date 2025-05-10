@@ -1,12 +1,12 @@
 // import React from "react";
 import { useState } from "react";
-import { team } from "../../data/team2";
+import { team } from "../../data/team2.ts";
 import Tmember from "../types/Tmember";
 import Member from "../components/TeamMember.tsx";
 import MemberDrawer from "../components/TeamMemberDrawer.tsx"
 
 function PeoplePage() {
-  const [people] = useState(team);
+const [people] = useState(team);
   const [selectedMember, setSelectedMember] = useState<Tmember | null>(null);
 
   const handleMemberClick = (member:Tmember) => {

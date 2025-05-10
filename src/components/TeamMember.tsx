@@ -30,7 +30,7 @@ function Member(prop: {
 	    border-4 border-indigo-600
 	    transition-transform duration-300 transform 
 	    group-hover:scale-105"
-            src={`img/team/${prop.dataMember.imageID}.jpg`}
+	    src={`/img/team/${prop.dataMember.imageID}.jpg`}
             alt={`Photo of ${prop.dataMember.name} `}
           />
           <div

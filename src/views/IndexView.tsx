@@ -8,15 +8,15 @@ function IndexPage() {
     <Fragment>
       <div className="container">
         <div className="mx-auto px-6">
-          <h1 className="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-UBtitles md:text-5xl lg:text-6xl ">
-            Marine Biodiversity and Evolution
+          <h1 className="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-UBtitles md:text-4xl lg:text-5xl ">
+      	    Marine Biodiversity and Evolution (MBE)
           </h1>
-          <h2 className="text-center">
-            Marine Biodiversity and Evolution (MBE) 2021 SGR 01271
-          </h2>
-          <h3 className="text-center mx-auto">
-            Grup de Recerca de la Generalitat de Catalunya
-          </h3>
+          <h1 className="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-UBtitles md:text-4xl lg:text-5xl ">
+      	    2021 SGR 01271
+          </h1>
+      	  <h2 className="text-xl text-gray-700 mt-2 mb-10">
+      	    Grup de Recerca de la Universitat de Barcelona reconegut per la Generalitat de Catalunya
+      	  </h2>
           <p>
             The main objective of the research group is to study the
             biodiversity of marine organisms and the evolutionary processes that
