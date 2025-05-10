@@ -1,9 +1,16 @@
 import { Fragment } from "react/jsx-runtime";
 import ProjectComp from "../components/Projects";
+import {projects} from "../../data/projects.ts"
+import {useState} from "react";
 
 function ProjectsPage() {
+  const [TheProjects] = useState(projects)
+
+
   return (
     <Fragment>
+    <div className="@container border-8 border-dashed border-orange-950">
+
       <section className="my-10">
         <div className="mx-auto max-w-screen-xl py-8 ">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
@@ -37,12 +44,20 @@ function ProjectsPage() {
           Current Projects
         </h2>
 
-        <ProjectComp />
-        <ProjectComp />
-        <ProjectComp />
-        <ProjectComp />
-        <ProjectComp />
+
+      <div className="grid grid-cols-1 justify-items-center gap-y-10 align-middle gap-4 lg:grid-cols-3 lg:gap-8">
+	{TheProjects.map((aProject)=>{
+	  return(
+	    <ProjectComp
+	    key={aProject.id}
+	    dataProject={aProject}
+	  />
+	)
+	})}
+      </div>
+
       </section>
+    </div>
     </Fragment>
   );
 }
