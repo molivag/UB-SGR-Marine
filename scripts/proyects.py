@@ -91,6 +91,7 @@ def format_ts_data(data):
   email: string;
   researcher: string;
   piproject: string;
+  acronym: string;
   nameProject: string;
   projectID: string;
   start: string;
