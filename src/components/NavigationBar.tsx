@@ -12,7 +12,7 @@ function MenuBar() {
         "uppercase font-bold text-lg text-UBfondo";
 
   return (
-    <Navbar fluid rounded className="bg-UBfoothead text-UBtitles py-5">
+    <Navbar fluid rounded className="bg-UBfoothead text-UBtitles py-5 mx-10">
       <Navbar.Brand as={Link} to="/">
         <img
           src="img/TortugaBoba.png"

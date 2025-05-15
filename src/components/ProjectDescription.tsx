@@ -16,7 +16,9 @@ function FullDescription() {
   return(
     <>
     <div className="mb-20"><strong className="text-4xl text-UBfoothead font-bold">Projects</strong></div>
-      <div className="h-[120vh] grid md grid-cols-3 gap-8 lg:grid-cols-3 border-8 border-dotted border-green-700">
+    <div className="h-[120vh] grid md grid-cols-3 gap-8 lg:grid-cols-3 
+
+    border-8 border-dotted border-green-700">
         <div className="sticky top-0 h-screen border-4 border-green-400">
         	<h1 className="mt-4 mb-8 ">{project.acronym}</h1>
         	<strong className="mt-8 text-xl"> {project.nameProject }</strong>

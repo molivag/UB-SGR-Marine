@@ -12,7 +12,7 @@ function ProjectComp(prop:{
     <Fragment>
 
       <Card
-        className="max-w-sm bg-green-50 flex flex-col justify-between h-full"
+        className="max-w-md bg-green-50 flex flex-col justify-between h-full"
         renderImage={() => (
           <img
             src={`img/projects/${prop.dataProject.imageID_logo}.jpg`}

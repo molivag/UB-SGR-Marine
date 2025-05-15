@@ -46,9 +46,10 @@ function Member(prop: {
       </div>
 
       <div className="flex flex-col items-center col-4 border-4 border-red-800">
-        <h3 className="h3member">{prop.dataMember.name}</h3>
-        <h4 className="h4member mb-3">{prop.dataMember.category}</h4>
-	<div>
+        {/* <h3 className="h3member">{prop.dataMember.name}</h3> */}
+        <h3 className="h3">{prop.dataMember.name}</h3>
+        <h4 className="h4 mb-3">{prop.dataMember.category}</h4>
+	<div className="border-4 border-dashed border-purple-800 w-full">
 	  <p>
             <em>Department</em>: {prop.dataMember.department}
           </p>
@@ -76,7 +77,10 @@ function Member(prop: {
           >
             <FaOrcid size={30} className="text-UBtitles" />
           </a>
-          <a href="">
+	  <a 
+	    href={`${prop.dataMember.scholar}`}
+	    target="_blank"
+	  >
             <FaGoogleScholar size={30} className="text-UBtitles" />
           </a>
         </div>
