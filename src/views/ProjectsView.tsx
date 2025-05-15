@@ -9,18 +9,20 @@ function ProjectsPage() {
 
   return (
     <Fragment>
-    <div className="@container border-8 border-dashed border-orange-950">
+    {/* <div className="@container border-8 border-dashed border-orange-950"> */}
+    <div className="border-8 border-dashed border-orange-950 mx-auto max-w-screen-2xl 3xl:max-w-screen-3xl 4xl:max-w-screen-4xl 5xl:max-w-screen-5xl px-4">
+
 
       <section className="my-10">
         <div className="mx-auto max-w-screen-xl py-8 ">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
+          <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:items-center md:gap-8">
             <div>
               <div className="max-w-lg md:max-w-none">
                 <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">
                   Project of the SGR Group
                 </h2>
 
-                <p className="mt-4 text-gray-700">
+                <p className="mt-4 p ">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Tenetur doloremque saepe architecto maiores repudiandae amet
                   perferendis repellendus, reprehenderit voluptas sequi.
@@ -38,24 +40,24 @@ function ProjectsPage() {
           </div>
         </div>
       </section>
-
       <section className="mt-20">
-        <h2 className="mb-10 text-2xl font-semibold text-gray-900 sm:text-3xl">
+        <h2 className="h2 mb-10">
           Current Projects
         </h2>
-
-
-      <div className="grid grid-cols-1 justify-items-center gap-y-10 align-middle gap-4 lg:grid-cols-3 lg:gap-8">
-	{TheProjects.map((aProject)=>{
-	  return(
-	    <ProjectComp
-	    key={aProject.id}
-	    dataProject={aProject}
-	  />
-	)
-	})}
-      </div>
-
+	<div className="px-3 grid grid-cols-1 justify-items-center gap-y-10 align-middle 
+	md:grid-cols-2 md:gap-8 
+	lg:grid-cols-2 lg:gap-x-1 lg:gap-y-12 
+	xl:grid-cols-3 xl:gap-y-20 xl:gap-x-0
+	5xl:grid-cols-4 5xl:gap-x-10">
+      	  {TheProjects.map((aProject)=>{
+      	    return(
+      	      <ProjectComp
+      	      key={aProject.id}
+      	      dataProject={aProject}
+      	    />
+      	  )
+      	  })}
+      	</div>
       </section>
     </div>
     </Fragment>

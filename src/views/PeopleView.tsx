@@ -18,18 +18,40 @@ const [people] = useState(team);
   };
 
   return (
-    <div className="mx-auto border-6 border-double container ">
+    <div className="container mx-auto border-8 border-double border-purple-600
+      xsm:max-w-screen-xsm 
+      sm:max-w-screen-sm 
+      md:max-w-screen-sm
+      lg:max-w-screen-xl
+      xl:max-w-screen-2xl
+      4xl:max-w-screen-4xl
+      5xl:max-w-screen-5xl">
+
+      <h1 className="h1">
+	The SGR MBE TEAM
+      </h1>
       <section>
-        <div className="grid grid-cols-2 mb-40">
+        <div className="grid grid-cols-2 mb-5">
           <div className="border-8 border-dotted border-green-800 mt-5">
-            <h1 className="py-20">FOTO Departamento</h1>
+	  <img src="img/edifici_nou.jpg" alt="Imagen del Vestibulo"/>
+              {/* <p className="mb-4 p"> */}
+              {/*   Lorem ipsum dolor sit amet consectetur adipisicing elit. */}
+              {/*   Expedita repellat non alias facere, corporis cum consequuntur */}
+              {/*   ratione officiis possimus. Voluptas mollitia voluptates */}
+              {/*   voluptatem aut iusto ex voluptate odit porro ullam!Odio officiis */}
+              {/*   nam error eaque debitis at. Ad optio similique distinctio ipsa, */}
+              {/*   natus recusandae delectus vel ut sed ab rerum iusto dolorum */}
+              {/*   praesentium unde nihil error illum commodi eligendi. Ab? */}
+              {/* </p> */}
           </div>
           <div className="mt-5">
-            <aside>
-              <h1 className=" mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-UBtitles md:text-5xl lg:text-6xl ">
-                The SGR MBE TEAM
-              </h1>
-              <p className="mb-4">
+            <aside >
+              {/* <h1 className=" mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-UBtitles md:text-5xl lg:text-6xl "> */}
+              <p className="ml-5 mt-5 mb-4 p">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Consectetur tempora sit dignissimos sint natus! Exercitationem
                 tempora necessitatibus possimus cumque, omnis incidunt mollitia
@@ -40,52 +62,40 @@ const [people] = useState(team);
                 dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quidem ab explicabo aliquam voluptatum. Dolores soluta voluptas
                 temporibus quis. Sunt debitis consequuntur quidem. Possimus
-                veritatis deleniti, culpa neque non quo facilis?
-              </p>
-
-              <p className="mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Expedita repellat non alias facere, corporis cum consequuntur
-                ratione officiis possimus. Voluptas mollitia voluptates
-                voluptatem aut iusto ex voluptate odit porro ullam!Odio officiis
-                nam error eaque debitis at. Ad optio similique distinctio ipsa,
-                natus recusandae delectus vel ut sed ab rerum iusto dolorum
-                praesentium unde nihil error illum commodi eligendi. Ab?
-              </p>
-              <p className="mb-4">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Consectetur tempora sit dignissimos sint natus! Exercitationem
-                tempora necessitatibus possimus cumque, omnis incidunt mollitia
-                quia excepturi ad asperiores provident iure quis. Rerum! Lorem
-                ipsum, dolor sit amet consectetur adipisicing elit. Minus aut
-                unde provident, ullam nostrum nulla natus eaque harum porro
-                sequi. Nostrum beatae quo eaque quidem veniam eos voluptas iure
-                dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quidem ab explicabo aliquam voluptatum. Dolores soluta voluptas
-                temporibus quis. Sunt debitis consequuntur quidem. Possimus
-                veritatis deleniti, culpa neque non quo facilis?
-              </p>
-
-              <p className="mb-4">
-                LoTerem ipsum dolor sit amet consectetur adipisicing elit.
-                Expedita repellat non alias facere, corporis cum consequuntur
-                ratione officiis possimus. Voluptas mollitia voluptates
-                voluptatem aut iusto ex voluptate odit porro ullam!Odio officiis
-                nam error eaque debitis at. Ad optio similique distinctio ipsa,
-                natus recusandae delectus vel ut sed ab rerum iusto dolorum
-                praesentium unde nihil error illum commodi eligendi. Ab?
               </p>
             </aside>
           </div>
         </div>
-	
-	<h1 className="mt-30 mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-UBtitles md:text-5xl lg:text-6xl ">
-          Team Members of SGR MBE
-        </h1>
 
-        <h2 className="mt-10 text-4xl font-extrabold text-UBnone">
-          Current Members
+	<div>
+	  <p className="mb-4 p ">
+	    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+	    Consectetur tempora sit dignissimos sint natus! Exercitationem
+	    tempora necessitatibus possimus cumque, omnis incidunt mollitia
+	    quia excepturi ad asperiores provident iure quis. Rerum! Lorem
+	    ipsum, dolor sit amet consectetur adipisicing elit. Minus aut
+	    unde provident, ullam nostrum nulla natus eaque harum porro
+	    sequi. Nostrum beatae quo eaque quidem veniam eos voluptas iure
+	    dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+	    Quidem ab explicabo aliquam voluptatum. Dolores soluta voluptas
+	    temporibus quis. Sunt debitis consequuntur quidem. Possimus
+	    temporibus quis. Sunt debitis consequuntur quidem. Possimus
+	    temporibus quis. Sunt debitis consequuntur quidem. Possimus
+	    temporibus quis. Sunt debitis consequuntur quidem. Possimus
+	    temporibus quis. Sunt debitis consequuntur quidem. Possimus
+	    temporibus quis. Sunt debitis consequuntur quidem. Possimus
+	    veritatis deleniti, culpa neque non quo facilis?
+	  </p>
+
+	</div>
+
+	<h2 className="h2 mt-20 mb-50">
+          Members of SGR MBE
         </h2>
+
+        {/* <h3 className="mt-10 text-4xl font-extrabold text-UBnone"> */}
+        {/*   Current Members */}
+        {/* </h3> */}
 
 	<div className="mb-20 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-12 border-4 border-dotted max-w-full min-w-0">
 
@@ -102,15 +112,15 @@ const [people] = useState(team);
           })}
         </div>
 
-        <h2 className="mt-5 text-4xl font-extrabold text-UBnone">
-          Former Members
-        </h2>
-        <div className=" mb-20 mx-auto grid grid-cols-3 gap-6 gap-y-12 border-4 border-dotted max-w-9/10"></div>
+        {/* <h2 className="mt-5 text-4xl font-extrabold text-UBnone"> */}
+          {/* Former Members */}
+        {/* </h2> */}
+        {/* <div className=" mb-20 mx-auto grid grid-cols-3 gap-6 gap-y-12 border-4 border-dotted max-w-9/10"></div> */}
 
-        <h2 className="mt-5 text-4xl font-extrabold text-UBnone">
-          PhD Students
-        </h2>
-        <div className=" mb-20 mx-auto grid grid-cols-3 gap-6 gap-y-12 border-4 border-dotted max-w-9/10"></div>
+        {/* <h2 className="mt-5 text-4xl font-extrabold text-UBnone"> */}
+        {/*   PhD Students */}
+        {/* </h2> */}
+        {/* <div className=" mb-20 mx-auto grid grid-cols-3 gap-6 gap-y-12 border-4 border-dotted max-w-9/10"></div> */}
       </section>
 
       <MemberDrawer
