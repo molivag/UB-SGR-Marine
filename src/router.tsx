@@ -6,6 +6,8 @@ import PeoplePage from "./views/PeopleView";
 import ProjectsPage from "./views/ProjectsView";
 import FullDescription from "./components/ProjectDescription";
 import ScrollToTop from "./components/Scroll";
+
+// import ScrollLayout from "./components/Descrption2";
 // import GroupPage from "./views/GroupsView";
 // import ContactPage from "./views/ContactView";
 
@@ -27,6 +29,7 @@ function AppRouter() {
           <Route path="People" element={<PeoplePage />} />
           <Route path="Projects" element={<ProjectsPage />} />
 	  <Route path="Projects/:acronym" element={<FullDescription/>} />
+	  {/* <Route path="/ScrollLayout" element={<ScrollLayout/>}/> */}
           {/* <Route path="Research" element={<GroupPage />} /> */}
           {/* <Route path="Contact" element={<ContactPage />} /> */}
         </Route>
