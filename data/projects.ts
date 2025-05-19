@@ -3,6 +3,7 @@ type Tproject = {
   email: string;
   researcher: string;
   piproject: string;
+  acronym: string;
   nameProject: string;
   projectID: string;
   start: string;
@@ -26,7 +27,8 @@ export const projects: Tproject[] = [
     email: "rocio_perez@ub.edu",
     researcher: "Rocío Pérez-Portela",
     piproject: "Rocío Pérez-Portela & José Carlos Hernández",
-    nameProject: "Genomic divergence, plasticity and microbiome shifts in marine invertebrates along natural environmental gradients (ENVIOME)",
+    acronym: "ENVIOME",
+    nameProject: "Genomic divergence, plasticity and microbiome shifts in marine invertebrates along natural environmental gradients",
     projectID: "PID2021-128094NB-I00",
     start: "09-01-2022",
     end: "8-31-2026",
@@ -53,7 +55,7 @@ necessarily complementary, and they may not add biological potential to confront
     socialNetwork_x: "https://x.com/EchinoAdaptive",
     socialNetwork_bsky: " ",
     socialNetwork_inst: " ",
-    imageID_logo: " ",
+    imageID_logo: "logo_enviome2",
     imageID_FunAgen: " ",
     imageID_ex1: " ",
     imageID_ex2: " ",
@@ -64,7 +66,8 @@ necessarily complementary, and they may not add biological potential to confront
     email: "rocio_perez@ub.edu",
     researcher: "Rocío Pérez-Portela",
     piproject: "Rocío Pérez-Portela",
-    nameProject: "Intraspecific and interspecific biological processes underpinning the adaptability of marine invertebrates to ocean acidification (ACIDOMIC)",
+    acronym: "ACIDOMIC",
+    nameProject: "Intraspecific and interspecific biological processes underpinning the adaptability of marine invertebrates to ocean acidification",
     projectID: "CNS2022-135968",
     start: "09-01-2023",
     end: "08-31-2025",
@@ -94,9 +97,9 @@ intraspecific biological processes with interspecific interactions between the l
     socialNetwork_x: "https://x.com/EchinoAdaptive",
     socialNetwork_bsky: " ",
     socialNetwork_inst: " ",
-    imageID_logo: " ",
+    imageID_logo: "logo_acidomic2",
     imageID_FunAgen: " ",
-    imageID_ex1: " ",
+    imageID_ex1: "paracentrotus_Rocío",
     imageID_ex2: " ",
     imageID_ex3: " "
   },
@@ -105,7 +108,8 @@ intraspecific biological processes with interspecific interactions between the l
     email: "rocio_perez@ub.edu",
     researcher: "Rocío Pérez-Portela",
     piproject: "Rocío Pérez-Portela",
-    nameProject: "Adaptabilidad genética de las especies marinas en gradientes naturales análogos a los océanos del futuro (DIVERGEN)",
+    acronym: "DIVERGEN",
+    nameProject: "Adaptabilidad genética de las especies marinas en gradientes naturales análogos a los océanos del futuro",
     projectID: "DIVERGEN",
     start: "07-01-2022",
     end: "06-30-2025",
@@ -117,9 +121,9 @@ intraspecific biological processes with interspecific interactions between the l
     socialNetwork_x: "https://x.com/EchinoAdaptive",
     socialNetwork_bsky: " ",
     socialNetwork_inst: " ",
-    imageID_logo: " ",
+    imageID_logo: "logo_divergen2",
     imageID_FunAgen: " ",
-    imageID_ex1: " ",
+    imageID_ex1: "divergen_team",
     imageID_ex2: " ",
     imageID_ex3: " "
   },
@@ -128,7 +132,8 @@ intraspecific biological processes with interspecific interactions between the l
     email: "conxita.avila@ub.edu",
     researcher: "Conxita Avila",
     piproject: "C. Avila & E.Ballesté",
-    nameProject: "HUMAN PRESSURES AND NATURAL HAZARDS: CHALLENGES FOR ANTARCTIC MARINE ECOSYSTEMS (CHALLENGE-2)",
+    acronym: "CHALLENGE-2",
+    nameProject: "Human Pressures and Natural Hazards: Challenges for Antarctic Marine Ecosystems",
     projectID: "PID2022-141628NB-I00/ANT",
     start: "01-01-2024",
     end: "12-31-2027",
@@ -142,8 +147,8 @@ relevance for our planet. The integration of all the results generated (human pr
     socialNetwork_x: " ",
     socialNetwork_bsky: " ",
     socialNetwork_inst: " ",
-    imageID_logo: " ",
-    imageID_FunAgen: " ",
+    imageID_logo: "logo_CHALLENGE2_2",
+    imageID_FunAgen: "CHALLENGE2_MICINN",
     imageID_ex1: " ",
     imageID_ex2: " ",
     imageID_ex3: " "

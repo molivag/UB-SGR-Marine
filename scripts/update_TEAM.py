@@ -4,8 +4,8 @@ import re
 import os
 
 # Archivos de entrada y salida
-INPUT_FILE = "../data/teamDB2.xlsx"     # Archivo Excel o CSV con nuevos miembros
-OUTPUT_FILE = "../data/team2_final.ts"        # Archivo donde se guardan los miembros
+INPUT_FILE = "../data/teamWEB_MBE.xlsx"     # Archivo Excel o CSV con nuevos miembros
+OUTPUT_FILE = "../data/team2.ts"        # Archivo donde se guardan los miembros
 
 
 def ts_to_json_compatible(ts_string):

@@ -1,11 +1,13 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaOrcid,
-  FaLinkedin, 
-  FaInstagram, 
-  FaEnvelope, 
-  FaBluesky, 
-  FaGoogleScholar} from "react-icons/fa6";
+import {
+  FaOrcid,
+  FaLinkedin,
+  FaInstagram,
+  FaEnvelope,
+  FaBluesky,
+  FaGoogleScholar,
+} from "react-icons/fa6";
 import Tmember from "../types/Tmember";
 
 type DrawerProps = {
@@ -14,7 +16,7 @@ type DrawerProps = {
   member: Tmember | null;
 };
 
-function MemberDrawer({ isOpen, onClose, member }:DrawerProps) {
+function MemberDrawer({ isOpen, onClose, member }: DrawerProps) {
   return (
     <AnimatePresence>
       {isOpen && member && (
@@ -45,7 +47,7 @@ function MemberDrawer({ isOpen, onClose, member }:DrawerProps) {
 
             <div className="mt-10 flex flex-col items-center text-center">
               <img
-		src={`img/team/${member.imageID}.jpg`}
+                src={`img/team/${member.imageID}.jpg`}
                 alt={member.name}
                 className="w-80 h-80 rounded-md object-cover  shadow-md mb-4"
               />
@@ -53,96 +55,87 @@ function MemberDrawer({ isOpen, onClose, member }:DrawerProps) {
               <p className="text-sm text-gray-500 mb-4">{member.category}</p>
 
               <p className="text-gray-900 text-md leading-relaxed mb-6 whitespace-pre-line text-justify">
-	      {member.description}
+                {member.description}
               </p>
 
               {/* Redes sociales */}
-	      <div className="flex gap-4">
-	        {/* Instagram */}
-	        {member.socialmedia_INSTA && member.socialmedia_INSTA.trim() !== "" ? (
-	          <a
-	            href={member.socialmedia_INSTA}
-	            target="_blank"
-	            rel="noopener noreferrer"
-	          >
-	            <img
-	              src="/img/Insta.svg"
-	              alt="Instagram"
-	              className="w-7 h-7 hover:grayscale transition duration-300 cursor-pointer"
-	            />
-	          </a>
-	        ):null}
-	      
-	        {/* LinkedIn */}
-	        {member.socialmedia_IN && member.socialmedia_IN.trim() !== "" ? (
-	          <a
-	            href={member.socialmedia_IN}
-	            target="_blank"
-	            rel="noopener noreferrer"
-	            className="text-blue-700 hover:text-blue-900"
-	          >
-	            <FaLinkedin size={30} />
-	          </a>
-		  
-	        ):null}
-	      
-	        {/* Google Scholar */}
-	        {member.scholar && member.scholar.trim() !== "" ? (
-	          <a
-	            href={member.scholar}
-	            target="_blank"
-	            rel="noopener noreferrer"
-	            className="text-purple-600 hover:text-purple-800"
-	          >
-	            <FaGoogleScholar size={30} />
-	          </a>
-	        ):null}
-	      
-	        {/* ORCID */}
-		{member.orcid && member.orcid.trim() !== "" ? (
-	          <a
-	            href={member.orcid}
-	            target="_blank"
-	            rel="noopener noreferrer"
-	            className="text-green-600 hover:text-green-800"
-	          >
-	            <FaOrcid size={30} />
-	          </a>
-	        ):null}
-	      
-	        {/* Bluesky */}
-	        {member.socialmedia_BSKY && member.socialmedia_BSKY.trim() !== "" ? (
-	          <a
-	            href={member.socialmedia_BSKY}
-	            target="_blank"
-	            rel="noopener noreferrer"
-	            className="text-sky-500 hover:text-sky-700"
-	          >
-	            <FaBluesky size={30} />
-	          </a>
-	        ):null}
-	      
-	        {/* Email */}
-	        {/*{member.email && (*/}
-	        {/*  <a*/}
-	        {/*    href={`mailto:${member.email}`}*/}
-	        {/*    className="text-gray-600 hover:text-gray-800"*/}
-	        {/*  >*/}
-	        {/*    <FaEnvelope size={30} />*/}
-	        {/*  </a>*/}
-	        {/*)}*/}
-	      </div>
+              <div className="flex gap-6">
+                {/* Instagram */}
+                {member.socialmedia_INSTA &&
+                member.socialmedia_INSTA.trim() !== "" ? (
+                  <a
+                    href={member.socialmedia_INSTA}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/img/Insta.svg"
+                      alt="Instagram"
+                      className="w-7 h-7 hover:grayscale transition duration-300 cursor-pointer"
+                    />
+                  </a>
+                ) : null}
 
+                {/* LinkedIn */}
+                {member.socialmedia_IN &&
+                member.socialmedia_IN.trim() !== "" ? (
+                  <a
+                    href={member.socialmedia_IN}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-700 hover:text-blue-900"
+                  >
+                    <FaLinkedin size={30} />
+                  </a>
+                ) : null}
 
+                {/* Google Scholar */}
+                {member.scholar && member.scholar.trim() !== "" ? (
+                  <a
+                    href={member.scholar}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-purple-600 hover:text-purple-800"
+                  >
+                    <FaGoogleScholar size={30} />
+                  </a>
+                ) : null}
 
+                {/* ORCID */}
+                {member.orcid && member.orcid.trim() !== "" ? (
+                  <a
+                    href={member.orcid}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-600 hover:text-green-800"
+                  >
+                    <FaOrcid size={30} />
+                  </a>
+                ) : null}
 
+                {/* Bluesky */}
+                {member.socialmedia_BSKY &&
+                member.socialmedia_BSKY.trim() !== "" ? (
+                  <a
+                    href={member.socialmedia_BSKY}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sky-500 hover:text-sky-700"
+                  >
+                    <FaBluesky size={30} />
+                  </a>
+                ) : null}
 
-
-
-
-
-
-
+                {/* Email */}
+                {/*{member.email && (*/}
+                {/*  <a*/}
+                {/*    href={`mailto:${member.email}`}*/}
+                {/*    className="text-gray-600 hover:text-gray-800"*/}
+                {/*  >*/}
+                {/*    <FaEnvelope size={30} />*/}
+                {/*  </a>*/}
+                {/*)}*/}
+              </div>
             </div>
           </motion.div>
         </>
@@ -151,5 +144,4 @@ function MemberDrawer({ isOpen, onClose, member }:DrawerProps) {
   );
 }
 
-
-export default MemberDrawer
+export default MemberDrawer;

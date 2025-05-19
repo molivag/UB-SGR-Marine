@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;600,700;1,400;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;300;400;500;600;700;800;900&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;600,700;1,400;1,700&display=swap'); */
 
 @tailwind base;
 @tailwind components;
@@ -24,10 +26,20 @@
   }
 }
 
+@media (min-width: 1920px) and (max-width: 2900px) {
+  .for-gaia {
+    border: 20px solid green !important; /* grosor, tipo y color */
+  }
+}
+
+/* body { */
+/*   @apply font-Montserrat !important; */
+/*   @apply text-base !important; */
+/*   background-color:  #fbf2e5 !important; */
+/* } */
+
 body {
-  @apply font-Montserrat !important;
-  @apply text-base !important;
-  background-color:  #fbf2e5 !important;
+  @apply font-Montserrat text-base bg-UBfondo !important
 }
 
 
@@ -39,5 +51,41 @@ body {
   .h4member {
     @apply text-lg font-medium;
     @apply text-UBtitles
+  }
+  .h1 {
+    @apply font-extrabold leading-tight tracking-tight text-3xl sm:text-4xl md:text-4xl lg:text-6xl text-UBtitles;
+  }
+
+  .h2 {
+    @apply font-bold leading-snug tracking-tight text-2xl sm:text-3xl md:text-4xl text-UBtitles;
+  }
+
+  .h3 {
+    @apply font-semibold leading-snug tracking-normal text-xl sm:text-2xl md:text-3xl text-UBtitles;
+  }
+
+  .h4 {
+    @apply font-semibold tracking-normal text-lg sm:text-xl md:text-xl text-UBtitles;
+  }
+
+  .h5 {
+    @apply font-semibold tracking-normal text-base sm:text-lg md:text-xl;
+  }
+
+  h6 {
+    @apply font-semibold tracking-normal text-sm sm:text-base md:text-lg !important
+  }
+
+  .p {
+    @apply text-base font-medium sm:text-lg lg:text-xl leading-relaxed lg:leading-loose tracking-normal;
+  }
+    @media (min-width: 2350px) {
+    .h1 { font-size: 4.5rem; }
+    .h2 { font-size: 3.75rem; }
+    .h3 { font-size: 3rem; }
+    .h4 { font-size: 2.25rem; }
+    .h5 { font-size: 1.75rem; }
+    .h6 { font-size: 1.5rem; }
+    .p  { font-size: 1.375rem; line-height: 1.8; }
   }
 }

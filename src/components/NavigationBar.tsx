@@ -12,7 +12,7 @@ function MenuBar() {
         "uppercase font-bold text-lg text-UBfondo";
 
   return (
-    <Navbar fluid rounded className="bg-UBfoothead text-UBtitles py-5">
+    <Navbar fluid rounded className="bg-UBfoothead text-UBtitles py-5 mx-10">
       <Navbar.Brand as={Link} to="/">
         <img
           src="img/TortugaBoba.png"
@@ -52,24 +52,24 @@ function MenuBar() {
         {/* > */}
           Projects
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/Research" className={getLinkClass("/Research")}>
+        {/* <Navbar.Link as={Link} to="/Research" className={getLinkClass("/Research")}> */}
         {/* <Navbar.Link */}
         {/*   className="uppercase font-bold text-lg text-UBfondo" */}
         {/*   as={Link} */}
         {/*   to="/Research" */}
         {/*   active={location.pathname === "/Research"} */}
         {/* > */}
-          Research
-        </Navbar.Link>
-        <Navbar.Link as={Link} to="/Contact" className={`${getLinkClass("/Contact")} mr-4`}>
+          {/* Research */}
+        {/* </Navbar.Link> */}
+        {/* <Navbar.Link as={Link} to="/Contact" className={`${getLinkClass("/Contact")} mr-4`}> */}
         {/* <Navbar.Link */}
         {/*   className="uppercase font-bold text-lg text-UBfondo mr-4" */}
         {/*   as={Link} */}
         {/*   to="/Contact" */}
         {/*   active={location.pathname === "/Contact"} */}
         {/* > */}
-          Contact
-        </Navbar.Link>
+          {/* Contact */}
+        {/* </Navbar.Link> */}
       </Navbar.Collapse>
     </Navbar>
   );

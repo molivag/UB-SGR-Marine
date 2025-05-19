@@ -6,50 +6,47 @@ function Seniors() {
 
   return (
     <div className="py-10 sm:py-10">
-      <div className="mx-auto grid-rows-2 max-w-7xl gap-20 xl:grid-cols-3">
-        <div>
-          <h2 className="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">
-            Senior Members
-          </h2>
-          <p className="mt-6 text-lg/8 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-            officia animi dolores veritatis mollitia inventore magnam odit,
-            deleniti odio accusantium qui aspernatur, repellendus sed est hic
-            ipsa iusto similique culpa?
-          </p>
-        </div>
+    <div className="mx-auto grid-rows-2 xl:grid-cols-3 gap-20 px-20 
+    xsm:max-w-full xsm:px-2
+    xl:max-w-full xl:px-20 
+    3xl:max-w-full 3xl:px-20
+    5xl:max-w-full 5xl:px-20 
+    ">
+    <div className="mt-10 grid 
+      xsm:grid-cols-1 xsm:bg-green-500 
+      md:grid-cols-2 md:bg-inherit 
+      lg:grid-cols-3 gap-8 md:gap-12
+      border-8 border-dotted border-amber-900 ">
+        {people.map((person) => {
+          if (person.senior === "yes") {
+            return (
+              <div
+                key={person.name}
+                // items-center --> Agregar al div de abajo si es necesario en estilo
+                className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 border-8 border-double border-purple-400"
+              >
+                <img
+                  className="rounded-lg sm:size-28 5xl:size-36 "
+                  src={`/img/team/${person.imageID}.jpg`}
+                  alt="Avatar"
+                />
 
-        <div className="mt-10 grid grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-          {people.map((person) => {
-            if (person.senior === "yes") {
-              return (
-                <div
-                  key={person.name}
-                  // items-center --> Agregar al div de abajo si es necesario en estilo
-                  className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4"
-                >
-                  <img
-                    className="rounded-lg size-24"
-                    src={`/img/team/${person.imageID}.jpg`}
-                    alt="Avatar"
-                  />
-
-                  <div className="grow">
-                    <div>
-                      <h3 className="font-medium text-gray-800 dark:text-neutral-200">
+                <div className="grow">
+                  <div>
+              	    <h6>
                         {person.name}
-                      </h3>
-                      <p className="mt-1 text-xs uppercase text-gray-500 dark:text-neutral-500">
-                        {person.department}
-                      </p>
-                    </div>
+                    </h6>
+                    <p className="mt-1 text-xs uppercase text-gray-500 dark:text-neutral-500">
+                      {person.department}
+                    </p>
                   </div>
                 </div>
-              );
+              </div>
+            );
             } else {
               return null; // Si no es "Senior", no renderiza nada
             }
-          })}
+        })}
         </div>
 
         <ul
