@@ -34,6 +34,7 @@ function ProjectComp(prop:{
 	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel recusandae veniam iure repudiandae, quod, tempore atque sit culpa blanditiis dolorum sapiente provident? Dicta totam atque eius doloribus vero, similique facilis!</p>
         <div className="mt-4">
       	<Link
+	// to={"/ScrollLayout"}
       	to={`/Projects/${prop.dataProject.acronym}`}
       	state={{ project: prop.dataProject }}
       	>

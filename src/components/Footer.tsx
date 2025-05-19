@@ -144,7 +144,7 @@ function FooterComp() {
         </div>
       </div>
       <div className="py-6 text-sm text-center text-gray-400">
-        © 1968 Company Co. All rights reserved.
+        © 2025 Developed by ogmdevlab — design by committee. All rights reserved.
       </div>
     </footer>
   );
