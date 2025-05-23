@@ -12,8 +12,8 @@ import MenuBar from "./NavigationBar";
 
 
 
-import { motion, AnimatePresence } from "framer-motion";
-import { useEffect, useState } from "react";
+// import { motion, AnimatePresence } from "framer-motion";
+// import { useEffect, useState } from "react";
 
 // function HeaderComp() {
 //   const [scrolled, setScrolled] = useState(false);

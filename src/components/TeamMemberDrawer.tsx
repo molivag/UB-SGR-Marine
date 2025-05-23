@@ -1,10 +1,9 @@
-import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   FaOrcid,
   FaLinkedin,
-  FaInstagram,
-  FaEnvelope,
+  // FaInstagram,
+  // FaEnvelope,
   FaBluesky,
   FaGoogleScholar,
 } from "react-icons/fa6";

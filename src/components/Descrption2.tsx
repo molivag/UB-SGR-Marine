@@ -16,7 +16,7 @@ const ScrollLayout: React.FC = () => {
           transition={{ type: "spring", stiffness: 40 }}
         >
           <img
-	    src="../../public/img/edifici_nou.jpg" 
+	    src="/img/edifici_nou.jpg" 
             alt="Izquierda"
             className="w-full rounded-xl shadow-xl"
           />
@@ -30,7 +30,7 @@ const ScrollLayout: React.FC = () => {
           style={{ y }}
           transition={{ type: "spring", stiffness: 40 }}
         >
-          <img src="../../public/img/edifici_nou.jpg" 
+          <img src="/img/edifici_nou.jpg" 
             alt="Central"
             className="w-full rounded-xl shadow-xl"
           />

@@ -1,7 +1,7 @@
 import { useLocation, useParams, Navigate } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Tproject from "../types/Tproject";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 
@@ -13,6 +13,8 @@ const FullDescription: React.FC = () => {
   const location = useLocation();
   const project = location.state?.project as Tproject | undefined;
   const { acronym } = useParams();
+  console.log(acronym);
+  
 
   if (!project) {
     return <Navigate to="/" replace />;

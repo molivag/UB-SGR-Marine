@@ -1,7 +1,7 @@
 // function Member({props}){    ----> entre llaves es desctructuring
 import { FaGoogleScholar } from "react-icons/fa6";
 import { FaOrcid } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
+// import { FiMail } from "react-icons/fi";
 import Tmember from "../types/Tmember";
 
 import { FaEnvelope } from "react-icons/fa";

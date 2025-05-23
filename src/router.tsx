@@ -22,14 +22,14 @@ declare global {
 function AppRouter() {
   return (
     <BrowserRouter>
-    <ScrollToTop/>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<IndexPage />} index />
           <Route path="People" element={<PeoplePage />} />
           <Route path="Projects" element={<ProjectsPage />} />
-	  <Route path="Projects/:acronym" element={<FullDescription/>} />
-	  {/* <Route path="/ScrollLayout" element={<ScrollLayout/>}/> */}
+          <Route path="Projects/:acronym" element={<FullDescription />} />
+          {/* <Route path="/ScrollLayout" element={<ScrollLayout/>}/> */}
           {/* <Route path="Research" element={<GroupPage />} /> */}
           {/* <Route path="Contact" element={<ContactPage />} /> */}
         </Route>
