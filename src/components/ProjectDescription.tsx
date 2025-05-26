@@ -14,37 +14,43 @@ const FullDescription: React.FC = () => {
   const project = location.state?.project as Tproject | undefined;
   const { acronym } = useParams();
   console.log(acronym);
-  
+
 
   if (!project) {
     return <Navigate to="/" replace />;
   }
   return (
     <>
-      <div className="mb-20">
-        <strong className=" text-4xl text-UBfoothead font-bold">
-          Projects
-        </strong>
+      <div
+        className="mx-auto mb-20
+      	  xsm:max-w-screen-xsm 
+      	  sm:max-w-screen-sm 
+      	  md:max-w-screen-sm
+      	  lg:max-w-screen-xl
+      	  xl:max-w-screen-2xl
+      	  4xl:max-w-screen-4xl
+      	  5xl:max-w-screen-5xl">
+        {/* <strong className=" text-4xl text-UBfoothead font-bold"> */}
+          <h1 className="h1">Projects</h1>
+        {/* </strong> */}
       </div>
       <div
-        className="mx-auto flex w-full min-h-screen
-	xsm:max-w-screen-xsm 
-	sm:max-w-screen-sm 
-	md:max-w-screen-sm
-	lg:max-w-screen-xl
-	xl:max-w-screen-2xl
-	4xl:max-w-screen-4xl
-	5xl:max-w-screen-5xl
-        border-8 border-dotted border-green-700"
-      >
+        className="mb-20 mx-auto flex w-full min-h-screen
+          xsm:max-w-screen-xsm 
+          sm:max-w-screen-sm 
+          md:max-w-screen-sm
+          lg:max-w-screen-xl
+          xl:max-w-screen-2xl
+          4xl:max-w-screen-4xl
+          5xl:max-w-screen-5xl">
         {/* Columna izquierda */}
-        <div className="flex-[1.2] p-4 border-4 border-green-400">
+        <div className="flex-[1.2] p-4 ">
           <motion.div
             className="sticky top-0"
             style={{ y }}
             transition={{ type: "spring", stiffness: 40 }}
           >
-            <h1 className="mt-0 h1 mb-8 border-4 border-dashed border-black ">
+            <h1 className="mt-0 h2 mb-8  ">
               {project.acronym}
             </h1>
             <h2 className="mt-8 h3 leading-normal mb-40">
@@ -60,8 +66,8 @@ const FullDescription: React.FC = () => {
 	      as a funding agency of the current project`}
             />
 
-            <hr className="mt-28 border-t border-UBfoothead mb-2 max-w-32" />
-            <div className=" mb-11 border-8 border-yellow-500">
+            <hr className="mt-28 mb-2 max-w-32" />
+            <div className=" mb-11 ">
               <img
                 className=" rounded-md mb-11"
                 src={`/img/projects/${project.imageID_ex1}.jpg`}
@@ -72,7 +78,7 @@ const FullDescription: React.FC = () => {
         </div>
 
         {/* Columna central */}
-        <div className="flex-1 p-4 border-4 border-green-400">
+        <div className="flex-1 p-4 ">
           <motion.div
             className="sticky top-0"
             style={{ y }}
@@ -106,29 +112,29 @@ const FullDescription: React.FC = () => {
             </a>
 
             <div className="flex gap-6">
-	        {/* <hr className="mt-10 border-t border-UBfoothead mb-2 max-w-full" /> */}
+              {/* <hr className="mt-10 border-t border-UBfoothead mb-2 max-w-full" /> */}
               {project.socialNetwork_x && project.socialNetwork_x.trim() !== "" ? (
-              <a
-              href={project.socialNetwork_x}
-              target="_blank"
-	      rel="noopener noreferrer"
-	      className=" hover:text-gray-300"
-              >
-              <FaXTwitter size={30} className="mt-5  " />
-              </a>
+                <a
+                  href={project.socialNetwork_x}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" hover:text-gray-300"
+                >
+                  <FaXTwitter size={30} className="mt-5  " />
+                </a>
               ) : null}
               {project.socialNetwork_inst &&
-                  project.socialNetwork_inst.trim() !== "" ? (
-              <a
-              href={project.socialNetwork_inst}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-300"
-              >
-              <FaInstagram size={30} />
-              </a>
+                project.socialNetwork_inst.trim() !== "" ? (
+                <a
+                  href={project.socialNetwork_inst}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-300"
+                >
+                  <FaInstagram size={30} />
+                </a>
               ) : null}
-	    </div>
+            </div>
           </motion.div>
         </div>
 
