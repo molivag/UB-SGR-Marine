@@ -35,14 +35,3 @@ sftp put public/data/team.json username@websitedomain.ub:/public/data/
 ```
 ⚠️ Make sure you do not edit the JSON file manually. All updates should come from the Excel spreadsheet + Python script.
 
-
-## How to access to the members' database?
-Through secure shell connection
-```shell
-ssh username@websitedomain.ub 
-```
-Then, edit the `current` attribute in database file via:
-```shell
-nano public/team.ts            
-```
-Write the changes and close the file. The update will take place automatically.
