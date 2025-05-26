@@ -72,8 +72,8 @@ body {
     @apply font-semibold tracking-normal text-base sm:text-lg md:text-xl;
   }
 
-  h6 {
-    @apply font-semibold tracking-normal text-sm sm:text-base md:text-lg !important
+  .h6 {
+    @apply font-semibold tracking-normal text-sm sm:text-base md:text-lg 
   }
 
   .p {
