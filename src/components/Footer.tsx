@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function FooterComp() {
   return (
     <footer className="px-4 divide-y bg-UBfoothead text-gray-100">
@@ -20,7 +22,7 @@ function FooterComp() {
             {/* </div> */}
         <img
           src="img/TortugaBoba.png"
-          className="mr-3 h-6 sm:h-9"
+          className="mr-3 h-6 sm:h-9 mx-10 xsm:mx-0 lg:mx-10"
           alt="SGR UB Lab"
         />
             <span className="self-center text-2xl font-semibold">
@@ -28,7 +30,7 @@ function FooterComp() {
             </span>
           </a>
         </div>
-        <div className="grid grid-cols-2  text-sm gap-x-2 gap-y-8 lg:w-2/3 sm:grid-cols-2 border-7 border-red-900">
+        <div className="grid grid-cols-3  text-sm gap-x-2 gap-y-8 lg:w-2/3 sm:grid-cols-3">
           {/* <div className="space-y-3"> */}
           {/*   <h3 className="tracking-wide uppercase text-gray-50">The UB</h3> */}
           {/*   <ul className="space-y-1"> */}
@@ -44,31 +46,28 @@ function FooterComp() {
           {/*     </li> */}
           {/*   </ul> */}
           {/* </div> */}
-          {/* {/1* <div className="space-y-3"> *1/} */}
-          {/*   <h3 className="uppercase text-gray-50">Developers</h3> */}
-          {/*   {/1* <ul className="space-y-1"> *1/} */}
-          {/*   {/1*   <li> *1/} */}
-          {/*   {/1*     <a rel="noopener noreferrer" href="#"> *1/} */}
-          {/*   {/1*       Public API *1/} */}
-          {/*   {/1*     </a> *1/} */}
-          {/*   {/1*   </li> *1/} */}
-          {/*   {/1*   <li> *1/} */}
-          {/*   {/1*     <a rel="noopener noreferrer" href="#"> *1/} */}
-          {/*   {/1*       Documentation *1/} */}
-          {/*   {/1*     </a> *1/} */}
-          {/*   {/1*   </li> *1/} */}
-          {/*   {/1*   <li> *1/} */}
-          {/*   {/1*     <a rel="noopener noreferrer" href="#"> *1/} */}
-          {/*   {/1*       Guides *1/} */}
-          {/*   {/1*     </a> *1/} */}
-          {/*   {/1*   </li> *1/} */}
-          {/*   {/1* </ul> *1/} */}
-          {/* </div> */}
-          <div className="space-y-3">
-            <h3 className="tracking-wide uppercase text-gray-50">The UB</h3>
+          <div className="space-y-3 ml-44 xsm:ml-1 lg:ml-44">
+            <h4 className="h4 text-gray-50">The Site</h4>
+             <ul className="space-y-1"> 
+               <li> 
+              <Link to="/People" className="hover:text-orange-500"> 
+                   Team
+              </Link> 
+               </li> 
+               <li> 
+              <Link to="/Projects" className="hover:text-orange-500">
+                   Projects
+              </Link> 
+               </li>
+             </ul> 
+          </div> 
+          <div className="space-y-3 mx-auto xsm:mx-1">
+          <h4 className="h4 text-gray-50 sm:hidden">The UB</h4>
+<h4 className="h4 text-gray-50 hidden sm:block">The University of Barcelona</h4>
+
             <ul className="space-y-1">
               <li>
-                <a className="hover:text-orange-501"  rel="noopener noreferrer" href="https://web.ub.edu/en/legal-notice">
+                <a className="hover:text-orange-500"  rel="noopener noreferrer" href="https://web.ub.edu/en/legal-notice">
                   Legal Notice
                 </a>
               </li>
@@ -92,8 +91,9 @@ function FooterComp() {
             {/*   </li> */}
             {/* </ul> */}
           </div>
-          <div className="space-y-3">
-            <div className="uppercase text-gray-50">Social media</div>
+          <div className="space-y-3 ">
+          <h4 className="h4 text-gray-50 sm:hidden">Follow Us</h4>
+<h4 className="h4 text-gray-50 hidden sm:block">Social media</h4>
             <div className="flex justify-start space-x-3">
               <a
                 rel="noopener noreferrer"
