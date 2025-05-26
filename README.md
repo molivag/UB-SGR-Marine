@@ -31,7 +31,7 @@ public/data/team.json
 3. Upload the JSON to the web server via SSH:
 
 ```shell
-scp public/data/team.json username@your.server:/path/to/website/public/data/
+sftp put public/data/team.json username@websitedomain.ub:/public/data/
 ```
 ⚠️ Make sure you do not edit the JSON file manually. All updates should come from the Excel spreadsheet + Python script.
 
