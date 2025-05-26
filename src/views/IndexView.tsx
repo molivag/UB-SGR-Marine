@@ -57,13 +57,6 @@ function IndexPage() {
           <h2 className="h2 mt-20">
             Senior Members
           </h2>
-          <div>
-            <p className="p mt-6 text-green-400 text-opacity-90">
-              This is an introductory text for the senio section. Its purpose is to briefly set the context for the content below, highlighting the individuals who are part of the team. It can be adjusted later to match the tone and style of the final website.
-
-
-            </p>
-          </div>
           <Seniors />
         </div>
       </div>

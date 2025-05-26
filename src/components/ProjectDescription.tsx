@@ -59,7 +59,7 @@ const FullDescription: React.FC = () => {
               {" "}
               {project.nameProject}
             </h2>
-            <h3 className="mt-8 h3 mb-20">Founding Agencies</h3>
+            <h3 className="mt-8 h3 mb-20">Funding Agencies</h3>
             {/* <p className="p">{project.fundingAgency}</p> */}
             <img
               className="block sm:w-2/3 md:w-1/2 lg:w-1/2"
