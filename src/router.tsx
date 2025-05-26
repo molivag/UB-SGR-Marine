@@ -5,7 +5,7 @@ import IndexPage from "./views/IndexView";
 import PeoplePage from "./views/PeopleView";
 import ProjectsPage from "./views/ProjectsView";
 import FullDescription from "./components/ProjectDescription";
-import ScrollToTop from "./components/Scroll";
+import ScrollToTop from "./components/ScrollToTop";
 
 // import ScrollLayout from "./components/Descrption2";
 // import GroupPage from "./views/GroupsView";

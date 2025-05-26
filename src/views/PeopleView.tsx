@@ -18,7 +18,7 @@ function PeoplePage() {
   };
 
   return (
-    <div className="container mx-auto border-8 border-double border-purple-600
+    <div className="container mx-auto 
       xsm:max-w-screen-xsm 
       sm:max-w-screen-sm 
       md:max-w-screen-sm
@@ -31,8 +31,8 @@ function PeoplePage() {
         The SGR MBE TEAM
       </h1>
       <section>
-        <div className="grid grid-cols-2 mb-5">
-          <div className="border-8 border-dotted border-green-800 mt-5">
+        <div className="grid md:grid-cols-2 xsm:grid-cols-1 mb-5">
+          <div className="mt-5">
             <img src="img/edifici_nou.jpg" alt="Imagen del Vestibulo" />
             {/* <p className="mb-4 p"> */}
             {/*   Lorem ipsum dolor sit amet consectetur adipisicing elit. */}
@@ -89,7 +89,7 @@ function PeoplePage() {
 
         </div>
 
-        <h2 className="h2 mt-20 mb-50">
+        <h2 className="h2 mt-20 mb-50 mb-20 mx-auto">
           Members of SGR MBE
         </h2>
 
@@ -97,7 +97,7 @@ function PeoplePage() {
         {/*   Current Members */}
         {/* </h3> */}
 
-        <div className="mb-20 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-12 border-4 border-dotted max-w-full min-w-0">
+        <div className="mb-20 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-12 max-w-full min-w-0">
 
 
           {people.map((person) => {

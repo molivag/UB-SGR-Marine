@@ -10,13 +10,7 @@ function ProjectsPage() {
   return (
     <Fragment>
       {/* <div className="@container border-8 border-dashed border-orange-950"> */}
-      <div className="border-8 border-dashed border-orange-950 mx-auto 
-      max-w-screen-2xl 
-      3xl:max-w-screen-3xl 
-      4xl:max-w-screen-4xl 
-      5xl:max-w-screen-5xl px-4">
-
-
+      <div className="mb-20 mx-auto max-w-screen-2xl 3xl:max-w-screen-3xl 4xl:max-w-screen-4xl 5xl:max-w-screen-5xl px-4">
         <section className="my-10">
           <div className="mx-auto max-w-screen-xl py-8 ">
             <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:items-center md:gap-8">
