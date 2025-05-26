@@ -100,7 +100,7 @@ function HeaderComp() {
   return (
     <header>
       <div>
-        <div className="relative h-[900px] overflow-y-hidden">
+        <div className="relative h-[450px] overflow-y-hidden">
           {/* <div className="h-96 "> */}
           {/* <MoveImages /> */}
   	<SwipImages/>

@@ -6,8 +6,10 @@ const ScrollLayout: React.FC = () => {
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
 
+
   return (
     <div className="flex w-full min-h-screen">
+
       {/* Columna izquierda */}
       <div className="flex-1 p-4">
         <motion.div
@@ -16,7 +18,7 @@ const ScrollLayout: React.FC = () => {
           transition={{ type: "spring", stiffness: 40 }}
         >
           <img
-	    src="/img/edifici_nou.jpg" 
+            src="/img/edifici_nou.jpg"
             alt="Izquierda"
             className="w-full rounded-xl shadow-xl"
           />
@@ -30,7 +32,7 @@ const ScrollLayout: React.FC = () => {
           style={{ y }}
           transition={{ type: "spring", stiffness: 40 }}
         >
-          <img src="/img/edifici_nou.jpg" 
+          <img src="/img/edifici_nou.jpg"
             alt="Central"
             className="w-full rounded-xl shadow-xl"
           />
