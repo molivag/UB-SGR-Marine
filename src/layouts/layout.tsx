@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import HeaderComp from "../components/Header";
 import { Fragment } from "react/jsx-runtime";
 import FooterComp from "../components/Footer";
-import ScrollToTop from "../components/Scroll";
+import GoTop from "../components/BackToTop";
 
 function Layout() {
   return (
@@ -14,7 +14,7 @@ function Layout() {
         </main>
         <FooterComp />
       </div>
-      <ScrollToTop/>
+      <GoTop/>
     </Fragment>
   );
 }
