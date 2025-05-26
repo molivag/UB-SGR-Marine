@@ -6,47 +6,49 @@ function Seniors() {
 
   return (
     <div className="py-10 sm:py-10">
-    <div className="mx-auto grid-rows-2 xl:grid-cols-3 gap-20 px-20 
+      <div className="mx-auto grid-rows-2 xl:grid-cols-3 gap-20 px-20 
     xsm:max-w-full xsm:px-2
     xl:max-w-full xl:px-20 
     3xl:max-w-full 3xl:px-20
     5xl:max-w-full 5xl:px-20 
     ">
-    <div className="mt-10 grid 
-      xsm:grid-cols-1 xsm:bg-green-500 
+        <div className="mt-10 grid 
+      xsm:grid-cols-1 xsm:space-y-3
       md:grid-cols-2 md:bg-inherit 
       lg:grid-cols-3 gap-8 md:gap-12
-      border-8 border-dotted border-amber-900 ">
-        {people.map((person) => {
-          if (person.senior === "yes") {
-            return (
-              <div
-                key={person.name}
-                // items-center --> Agregar al div de abajo si es necesario en estilo
-                className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 border-8 border-double border-purple-400"
-              >
-                <img
-                  className="rounded-lg sm:size-28 5xl:size-36 "
-                  src={`/img/team/${person.imageID}.jpg`}
-                  alt="Avatar"
-                />
+          ">
+          {people.map((person) => {
+            if (person.senior === "yes") {
+              return (
+                <div
+                  key={person.name}
+                  // items-center --> Agregar al div de abajo si es necesario en estilo
+                  className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 ">
+                  <a href={person.website} target="_blank" rel="noopener noreferrer"
+                    className="transition-transform duration-300 hover:scale-105">
+                    <img
+                      className="rounded-lg sm:size-32 size-1/4 5xl:size-36 "
+                      src={`/img/team/${person.imageID}.jpg`}
+                      alt="Avatar"
+                    />
+                  </a>
 
-                <div className="grow">
-                  <div>
-              	    <h6>
+                  <div className="grow">
+                    <div>
+                      <h6 className="h5 xsm:text-center sm:text-left">
                         {person.name}
-                    </h6>
-                    <p className="mt-1 text-xs uppercase text-gray-500 dark:text-neutral-500">
-                      {person.department}
-                    </p>
+                      </h6>
+                      <p className="mt-1 text-xs uppercase text-gray-500 dark:text-neutral-500">
+                        {person.department}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
+              );
             } else {
               return null; // Si no es "Senior", no renderiza nada
             }
-        })}
+          })}
         </div>
 
         <ul
@@ -67,7 +69,7 @@ function Seniors() {
                       src={`/img/team/${person.imageID}.jpg`}
                       className="rounded-lg size-24 "
                     />
-                    <div className="border-2 border-dotted border-blue-300">
+                    <div>
                       <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">
                         {person.name}
                       </h3>
