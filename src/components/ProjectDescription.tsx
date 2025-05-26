@@ -130,7 +130,7 @@ const FullDescription: React.FC = () => {
                 <a
                   href={project.socialNetwork_inst}
                   target="_blank"
-              private method   rel="noopener noreferrer"
+		  rel="noopener noreferrer"
                   className="hover:text-gray-300"
                 >
                   <FaInstagram size={30} />
