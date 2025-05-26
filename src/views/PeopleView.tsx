@@ -47,44 +47,24 @@ function PeoplePage() {
           <div className="mt-5">
             <aside >
               {/* <h1 className=" mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-UBtitles md:text-5xl lg:text-6xl "> */}
-              <p className="ml-5 mt-5 mb-4 p">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Consectetur tempora sit dignissimos sint natus! Exercitationem
-                tempora necessitatibus possimus cumque, omnis incidunt mollitia
-                quia excepturi ad asperiores provident iure quis. Rerum! Lorem
-                ipsum, dolor sit amet consectetur adipisicing elit. Minus aut
-                unde provident, ullam nostrum nulla natus eaque harum porro
-                sequi. Nostrum beatae quo eaque quidem veniam eos voluptas iure
-                dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quidem ab explicabo aliquam voluptatum. Dolores soluta voluptas
-                temporibus quis. Sunt debitis consequuntur quidem. Possimus
+              <p className="ml-5 mt-5 mb-4 p text-green-400 text-opacity-90">
+                This is a placeholder text designed to represent the future introductory content for this section of the website. In its finalized version, this paragraph will offer a clear explanation of the purpose of the team page and provide visitors with an overview of what they can expect to find here. The final text will likely describe how this page brings together all the individuals who form part of the group, from senior members and researchers to students and support staff.
+
+                It may also highlight the importance of collaboration within the team and emphasize the diversity of roles, backgrounds, and contributions that help drive the group's mission forward. Additionally, the text could offer context about the team's structure or values, giving visitors a better understanding of who we are and what we do. Until then, this placeholder serves as a visual and spatial stand-in, helping to shape the layout and design of the section as the content continues to develop.
+
               </p>
             </aside>
           </div>
         </div>
 
         <div>
-          <p className="mb-4 p ">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consectetur tempora sit dignissimos sint natus! Exercitationem
-            tempora necessitatibus possimus cumque, omnis incidunt mollitia
-            quia excepturi ad asperiores provident iure quis. Rerum! Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Minus aut
-            unde provident, ullam nostrum nulla natus eaque harum porro
-            sequi. Nostrum beatae quo eaque quidem veniam eos voluptas iure
-            dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quidem ab explicabo aliquam voluptatum. Dolores soluta voluptas
-            temporibus quis. Sunt debitis consequuntur quidem. Possimus
-            temporibus quis. Sunt debitis consequuntur quidem. Possimus
-            temporibus quis. Sunt debitis consequuntur quidem. Possimus
-            temporibus quis. Sunt debitis consequuntur quidem. Possimus
-            temporibus quis. Sunt debitis consequuntur quidem. Possimus
-            temporibus quis. Sunt debitis consequuntur quidem. Possimus
-            veritatis deleniti, culpa neque non quo facilis?
+          <p className="mb-4 p text-green-400 text-opacity-90">
+                This is a placeholder text designed to represent the future introductory content for this section of the website. In its finalized version, this paragraph will offer a clear explanation of the purpose of the team page and provide visitors with an overview of what they can expect to find here. The final text will likely describe how this page brings together all the individuals who form part of the group, from senior members and researchers to students and support staff.
+
+                It may also highlight the importance of collaboration within the team and emphasize the diversity of roles, backgrounds, and contributions that help drive the group's mission forward. Additionally, the text could offer context about the team's structure or values, giving visitors a better understanding of who we are and what we do. Until then, this placeholder serves as a visual and spatial stand-in, helping to shape the layout and design of the section as the content continues to develop.
+
+
+
           </p>
 
         </div>

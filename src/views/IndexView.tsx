@@ -7,13 +7,13 @@ function IndexPage() {
   return (
     <Fragment>
       <div className="container mx-auto 
-      xsm:max-w-screen-xsm 
-      sm:max-w-screen-sm 
-      md:max-w-screen-sm
-      lg:max-w-screen-xl
-      xl:max-w-screen-2xl
-      4xl:max-w-screen-4xl
-      5xl:max-w-screen-5xl">
+          xsm:max-w-screen-xsm 
+          sm:max-w-screen-sm 
+          md:max-w-screen-sm
+          lg:max-w-screen-xl
+          xl:max-w-screen-2xl
+          4xl:max-w-screen-4xl
+          5xl:max-w-screen-5xl">
         {/* <h1 className="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-UBtitles md:text-4xl lg:text-5xl "> */}
         <h1 className="h1">
           Marine Biodiversity and Evolution (MBE)
@@ -49,18 +49,19 @@ function IndexPage() {
               src="/img/imagen1.png"
               alt="Organization of the Marine Biodiversity and Evolution Department"
             />
-            <p className="p text-base text-center"> Texto Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam asperiores exercitationem minus architecto impedit quaerat dolorem, temporibus minima, nulla dignissimos eum voluptates in maiores vitae ut accusantium totam. Magni, odio. decscriptivo de la imagen que se muestra</p>
+            <p className="p text-base text-center text-green-400 text-opacity-90">
+              This is a sample text used solely for demonstration purposes. Its goal is to showcase how the applied text styling—such as transparency—appears in relation to the previous image or layout. The content itself has no informational value and can be easily replaced with the final text when available.
+            </p>
           </div>
 
           <h2 className="h2 mt-20">
             Senior Members
           </h2>
           <div>
-            <p className="p mt-6 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-              officia animi dolores veritatis mollitia inventore magnam odit,
-              deleniti odio accusantium qui aspernatur, repellendus sed est hic
-              ipsa iusto similique culpa?
+            <p className="p mt-6 text-green-400 text-opacity-90">
+              This is an introductory text for the senio section. Its purpose is to briefly set the context for the content below, highlighting the individuals who are part of the team. It can be adjusted later to match the tone and style of the final website.
+
+
             </p>
           </div>
           <Seniors />

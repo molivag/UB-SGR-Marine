@@ -5,6 +5,9 @@ import Tproject from "../types/Tproject";
 
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 
+
+
+
 const FullDescription: React.FC = () => {
   // Scroll global de la ventana
   const { scrollYProgress } = useScroll();
@@ -14,7 +17,6 @@ const FullDescription: React.FC = () => {
   const project = location.state?.project as Tproject | undefined;
   const { acronym } = useParams();
   console.log(acronym);
-
 
   if (!project) {
     return <Navigate to="/" replace />;
@@ -31,7 +33,7 @@ const FullDescription: React.FC = () => {
       	  4xl:max-w-screen-4xl
       	  5xl:max-w-screen-5xl">
         {/* <strong className=" text-4xl text-UBfoothead font-bold"> */}
-          <h1 className="h1">Projects</h1>
+        <h1 className="h1">Projects</h1>
         {/* </strong> */}
       </div>
       <div
@@ -44,7 +46,7 @@ const FullDescription: React.FC = () => {
           4xl:max-w-screen-4xl
           5xl:max-w-screen-5xl">
         {/* Columna izquierda */}
-        <div className="flex-[1.2] p-4 ">
+        <div className="flex-[1.1]  ">
           <motion.div
             className="sticky top-0"
             style={{ y }}
@@ -78,7 +80,7 @@ const FullDescription: React.FC = () => {
         </div>
 
         {/* Columna central */}
-        <div className="flex-1 p-4 ">
+        <div className="flex-[1.1] p-5 mr-4 ">
           <motion.div
             className="sticky top-0"
             style={{ y }}
@@ -128,7 +130,7 @@ const FullDescription: React.FC = () => {
                 <a
                   href={project.socialNetwork_inst}
                   target="_blank"
-                  rel="noopener noreferrer"
+              private method   rel="noopener noreferrer"
                   className="hover:text-gray-300"
                 >
                   <FaInstagram size={30} />
@@ -139,7 +141,7 @@ const FullDescription: React.FC = () => {
         </div>
 
         {/* Columna derecha (contenido largo sin scroll interno) */}
-        <div className="flex-[1.3] p-4 border-l ">
+        <div className="flex-[1.3] p-4  ">
           {[...Array(1)].map((_, i) => (
             <p key={i} className="p text-gray-800 leading-relaxed">
               {project.summary}
