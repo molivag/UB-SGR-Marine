@@ -30,12 +30,14 @@ function SwipImages() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-      <SwiperSlide> <div className='bg-[url(/img/test1.jpg)] bg-cover bg-center h-full w-full'></div></SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+      {/* <SwiperSlide> <div className='bg-[url(/img/test1.jpg)] bg-cover bg-center h-full w-full'></div></SwiperSlide> */}
+        <SwiperSlide><span className='font-bold text-5xl'>Slide 1</span></SwiperSlide>
+        <SwiperSlide><span className='font-bold text-5xl'>Slide 2</span></SwiperSlide>
+        <SwiperSlide><span className='font-bold text-5xl'>Slide 3</span></SwiperSlide>
+        <SwiperSlide><span className='font-bold text-5xl'>Slide 4</span></SwiperSlide>
+        <SwiperSlide><span className='font-bold text-5xl'>Slide 5</span></SwiperSlide>
+        <SwiperSlide><span className='font-bold text-5xl'>Slide 6</span></SwiperSlide>
 {/* <SwiperSlide><div className="bg-[url(../../public/img/GiselaM.jpg)] ..."></div></SwiperSlide> */}
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
       </Swiper>
     </>
   );
