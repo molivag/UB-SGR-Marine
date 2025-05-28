@@ -9,7 +9,7 @@ function IndexPage() {
       <div className="container mx-auto 
           xsm:max-w-screen-xsm 
           sm:max-w-screen-sm 
-          md:max-w-screen-sm
+          md:max-w-screen-md
           lg:max-w-screen-xl
           xl:max-w-screen-2xl
           4xl:max-w-screen-4xl
@@ -18,11 +18,14 @@ function IndexPage() {
         <h1 className="h1">
           Marine Biodiversity and Evolution (MBE)
         </h1>
-        <h2 className="h2 mt-3">
+        <h2 className="h2 mt-3 leading-tight hidden 5xl:block">
+          2021 SGR 01271 Grup de Recerca de la Universitat de Barcelona reconegut  per la Generalitat de Catalunya
+        </h2>
+        <h2 className="h2 mt-3 leading-tight 5xl:hidden">
           2021 SGR 01271 Grup de Recerca de la Universitat de Barcelona reconegut  per la <br />Generalitat de Catalunya
         </h2>
         <div className="mx-auto ">
-          <p className="p mt-20">
+          <p className="p mt-20 xsm:text-justify md:text-left">
             The main objective of the research group is to study the
             biodiversity of marine organisms and the evolutionary processes that
             generate it. Our lines of research cover a wide range of topics,
@@ -45,11 +48,11 @@ function IndexPage() {
 
           <div>
             <img
-              className=" mt-20 mx-auto w-1/2"
+              className=" mt-20 mx-auto xsm:size-auto md:w-1/2"
               src="/img/imagen1.png"
               alt="Organization of the Marine Biodiversity and Evolution Department"
             />
-            <p className="p text-base text-center text-green-400 text-opacity-90">
+	    <p className="p text-base text-center text-green-400 text-opacity-90 xsm:text-justify md:text-left px-2">
               This is a sample text used solely for demonstration purposes. Its goal is to showcase how the applied text styling—such as transparency—appears in relation to the previous image or layout. The content itself has no informational value and can be easily replaced with the final text when available.
             </p>
           </div>
