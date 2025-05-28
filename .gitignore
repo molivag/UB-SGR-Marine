@@ -14,6 +14,7 @@ tsconfig.node.tsbuildinfo
 
 node_modules
 dist/
+resources/
 dist-ssr
 *.local
 
