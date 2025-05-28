@@ -1,6 +1,6 @@
 import { Fragment } from "react/jsx-runtime";
 import ProjectComp from "../components/Projects";
-import { projects } from "../../data/projects.ts"
+import { projects } from "../../updateINFO/data/projects.ts"
 import { useState } from "react";
 
 function ProjectsPage() {

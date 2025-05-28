@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { team } from "../../data/team2";
+import { team } from "../../updateINFO/data/team2";
 
 function Seniors() {
   const [people] = useState(team);
