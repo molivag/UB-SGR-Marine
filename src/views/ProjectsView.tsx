@@ -10,7 +10,13 @@ function ProjectsPage() {
   return (
     <Fragment>
       {/* <div className="@container border-8 border-dashed border-orange-950"> */}
-      <div className="mb-20 mx-auto max-w-screen-2xl 3xl:max-w-screen-3xl 4xl:max-w-screen-4xl 5xl:max-w-screen-5xl px-4">
+      <div className="mb-20 mx-auto max-w-screen-2xl 
+      sm:max-w-screen-sm 
+      md:max-w-screen-md
+      lg:max-w-screen-lg
+      3xl:max-w-screen-3xl 
+      4xl:max-w-screen-4xl 
+      5xl:max-w-screen-5xl px-4">
         {/* <section className="my-10"> */}
         {/*   <div className="mx-auto max-w-screen-xl py-8 "> */}
         {/*     <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:items-center md:gap-8"> */}
@@ -43,10 +49,10 @@ function ProjectsPage() {
             Current Projects
           </h1>
           <div className="px-3 grid grid-cols-1 justify-items-center gap-y-10 align-middle 
-          grid-cols-32	md:grid-cols-2 md:gap-8 
-          grid-cols-32	lg:grid-cols-2 lg:gap-x-1 lg:gap-y-12 
-          grid-cols-32	xl:grid-cols-3 xl:gap-y-20 xl:gap-x-0
-          grid-cols-32	5xl:grid-cols-4 5xl:gap-x-10">
+	    md:grid-cols-2 md:gap-8 
+            lg:grid-cols-2 lg:gap-y-12 lg:gap-x-1 
+            xl:grid-cols-2 xl:gap-y-20 xl:gap-x-1
+            5xl:grid-cols-4 5xl:gap-x-10">
             {TheProjects.map((aProject) => {
               return (
                 <ProjectComp
