@@ -37,16 +37,16 @@ const FullDescription: React.FC = () => {
         {/* </strong> */}
       </div>
       <div
-        className="mb-20 mx-auto flex w-full min-h-screen
+        className="mb-20 mx-auto grid p-0 grid-cols-1 md:grid-cols-3 w-full min-h-screen
           xsm:max-w-screen-xsm 
           sm:max-w-screen-sm 
-          md:max-w-screen-sm
+          md:max-w-screen-md
           lg:max-w-screen-xl
           xl:max-w-screen-2xl
           4xl:max-w-screen-4xl
           5xl:max-w-screen-5xl">
         {/* Columna izquierda */}
-        <div className="flex-[1.1]  ">
+        <div className=" xsm:mr-0 md:mr-10">
           <motion.div
             className="sticky top-0"
             style={{ y }}
@@ -80,7 +80,7 @@ const FullDescription: React.FC = () => {
         </div>
 
         {/* Columna central */}
-        <div className="flex-[1.1] p-5 mr-4 ">
+        <div className="sm:bt-20 xsm:p-0 p-5 mr-5 xsm:mt-20 md:mt-0 ">
           <motion.div
             className="sticky top-0"
             style={{ y }}
@@ -130,7 +130,7 @@ const FullDescription: React.FC = () => {
                 <a
                   href={project.socialNetwork_inst}
                   target="_blank"
-              private method   rel="noopener noreferrer"
+		  rel="noopener noreferrer"
                   className="hover:text-gray-300"
                 >
                   <FaInstagram size={30} />
@@ -141,9 +141,9 @@ const FullDescription: React.FC = () => {
         </div>
 
         {/* Columna derecha (contenido largo sin scroll interno) */}
-        <div className="flex-[1.3] p-4  ">
+        <div className=" md:p-4 md:mt-0 md:border-none xsm:p-0 xsm:mt-20 xsm:border-t xsm:border-UBfoothead">
           {[...Array(1)].map((_, i) => (
-            <p key={i} className="p text-gray-800 leading-relaxed">
+            <p key={i} className="p text-gray-800 leading-relaxed xsm:mt-5 md:mt-0">
               {project.summary}
             </p>
           ))}
