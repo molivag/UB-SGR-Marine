@@ -40,7 +40,7 @@ export default {
         '5xl': '2350px', // pantallas desde 2350 y superior
       },
       maxWidth: {
-        'screen-xsm': '300px',
+        'screen-xsm': '350px',
         'screen-3xl': '1600px',
         'screen-4xl': '1700px',
         'screen-5xl': '2200px',
