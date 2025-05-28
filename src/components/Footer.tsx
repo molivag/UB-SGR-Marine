@@ -53,7 +53,8 @@ function FooterComp() {
           {/*   </ul> */}
           {/* </div> */}
           <div className="space-y-3 ml-44 xsm:ml-1 lg:ml-44">
-            <h4 className="h4 text-gray-50">The Site</h4>
+            <h4 className="h4 text-gray-50 hidden sm:block">The Site</h4>
+            <h4 className="h4 text-gray-50 sm:hidden">The Site</h4>
             <ul className="space-y-1">
               <li>
                 <Link to="/" className="hover:text-orange-500">
