@@ -28,7 +28,7 @@ function Seniors() {
 		className="rounded-lg mx-auto md:mx-0 
 		xsm:size-72 sm:size-28 md:size-32 5xl:size-40 
 		transition-transform duration-300 hover:scale-105 cursor-pointer"
-                  src={`/img/team/${person.imageID}.jpg`}
+                  src={`img/team/${person.imageID}.jpg`}
                   alt="Avatar"
 		  onClick={() => window.open(person.website, '_blank', 'noopener,noreferrer')}
                 />
@@ -65,8 +65,8 @@ function Seniors() {
                   <div className=" flex items-center gap-x-6">
                     <img
                       alt=""
-                      // src={`/img/team/${person.imageID}.jpg`}
-                      src={`/img/team/${person.imageID}.jpg`}
+                      // src={`img/team/${person.imageID}.jpg`}
+                      src={`img/team/${person.imageID}.jpg`}
                       className="rounded-lg size-24 "
                     />
                     <div className="border-2 border-dotted border-blue-300">
