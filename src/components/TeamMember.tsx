@@ -24,12 +24,13 @@ function Member(prop: {
       <div className="flex justify-center">
         <div className="flex justify-center relative group">
           <img
+	    loading="lazy"
             className="w-32 sm:w-44 md:w-48 lg:w-56  xl:w-64 
 	    rounded-3xl for-small for-middle 
 	    shadow-lg 
 	    transition-transform duration-300 transform 
 	    group-hover:scale-105"
-            src={`/img/team/${prop.dataMember.imageID}.jpg`}
+            src={`img/team/${prop.dataMember.imageID}.jpg`}
             alt={`Photo of ${prop.dataMember.name} `}
           />
           <div
