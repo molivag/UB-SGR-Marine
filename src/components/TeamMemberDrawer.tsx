@@ -68,7 +68,7 @@ function MemberDrawer({ isOpen, onClose, member }: DrawerProps) {
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="/img/Insta.svg"
+                      src="img/Insta.svg"
                       alt="Instagram"
                       className="w-7 h-7 hover:grayscale transition duration-300 cursor-pointer"
                     />
