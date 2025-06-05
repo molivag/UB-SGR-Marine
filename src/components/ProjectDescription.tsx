@@ -63,7 +63,7 @@ const FullDescription: React.FC = () => {
             {/* <p className="p">{project.fundingAgency}</p> */}
             <img
               className="block sm:w-2/3 md:w-1/2 lg:w-1/2"
-              src={`/img/projects/${project.imageID_FunAgen}.jpg`}
+	      src={`/MBE1271/img/projects/${project.imageID_FunAgen}.jpg`}
               alt={`Image of ${project.fundingAgency}
 	      as a funding agency of the current project`}
             />
@@ -72,7 +72,7 @@ const FullDescription: React.FC = () => {
             <div className=" mb-11 ">
               <img
                 className=" rounded-md mb-11"
-                src={`/img/projects/${project.imageID_ex1}.jpg`}
+                src={`/MBE1271/img/projects/${project.imageID_ex1}.jpg`}
                 alt={`Image related to the project`}
               />
             </div>
@@ -87,9 +87,10 @@ const FullDescription: React.FC = () => {
             transition={{ type: "spring", stiffness: 40 }}
           >
             <img
+	      loading="lazy"
+	      src={`/MBE1271/img/projects/${project.imageID_logo}.jpg`}
+              alt={`Image of the ${project.acronym} project`}
               className=" rounded-md"
-              src={`/img/projects/${project.imageID_logo}.jpg`}
-              alt={`Image of ${project.fundingAgency} as a funding agency of the current project`}
             />
             <p className=" p text-base my-5">
               Small Description related to the picture Small Description related
