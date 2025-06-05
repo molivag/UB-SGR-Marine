@@ -49,7 +49,7 @@ function IndexPage() {
           <div>
             <img
               className=" mt-20 mx-auto xsm:size-auto md:w-1/2"
-              src="/img/imagen1.png"
+              src="img/imagen1.png"
               alt="Organization of the Marine Biodiversity and Evolution Department"
             />
 	    <p className="p text-base text-center text-green-400 text-opacity-90 xsm:text-justify md:text-left px-2">
