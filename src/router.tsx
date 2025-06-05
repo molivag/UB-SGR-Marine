@@ -21,7 +21,7 @@ declare global {
 
 function AppRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/MBE1271/">
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
