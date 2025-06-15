@@ -1,5 +1,6 @@
 type Tmember = {
   id: number;
+  senior: string;
   current: boolean;
   name: string;
   category: string;
