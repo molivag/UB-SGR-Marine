@@ -1,54 +1,64 @@
-import { useState } from "react";
-import { team } from "../../updateINFO/data/team2";
+import { useEffect, useState } from "react";
+import Tmember from "../types/Tmember";
 
 function Seniors() {
-  const [people] = useState(team);
+  const [people, setPeople] = useState<Tmember[]>([]);
+
+  //el hook useEffect nos permitira hacer la peticion de la data por http y llevara dos argumentos 
+  //useEffect(()=>{},[]) una funcion flecha y un array vacio para ejecutarse una unica vez cuando se 
+  //monte el componente.
+  useEffect(() => {
+    fetch("info/team.json")
+      .then((response) => response.json())
+      .then((data) => setPeople(data))
+  }, []);
+  //con el useEffect anterior, cada vez que el estado cambie, se fuerza un renderizado nuevo.
 
   return (
     <div className="py-10 sm:py-10">
-    <div className="mx-auto grid-rows-2 xl:grid-cols-3 gap-20 px-20  5xl:px-10
+      <div className="mx-auto grid-rows-2 xl:grid-cols-3 gap-20 px-20 
     xsm:max-w-full xsm:px-2
     xl:max-w-full xl:px-20 
     3xl:max-w-full 3xl:px-20
     5xl:max-w-full 5xl:px-20 
     ">
-    <div className="mt-10 grid 
+        <div className="mt-10 grid 
       xsm:grid-cols-1
       md:grid-cols-2 md:bg-inherit 
       lg:grid-cols-3 gap-8 md:gap-12">
-        {people.map((person) => {
-          if (person.senior === "yes") {
-            return (
-              <div
-                key={person.name}
-                // items-center --> Agregar al div de abajo si es necesario en estilo
-                className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 "
-              >
-                <img
-		className="rounded-lg mx-auto md:mx-0 
-		xsm:size-72 sm:size-28 md:size-32 5xl:size-40 
-		transition-transform duration-300 hover:scale-105 cursor-pointer"
-                  src={`img/team/${person.imageID}.jpg`}
-                  alt="Avatar"
-		  onClick={() => window.open(person.website, '_blank', 'noopener,noreferrer')}
-                />
+          {people.map((person) => {
+            if (person.senior === "yes") {
+              return (
+                <div
+                  key={person.name}
+                  // items-center --> Agregar al div de abajo si es necesario en estilo
+                  className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 "
+                  >
+                  <img
+                    className="rounded-lg mx-auto md:mx-0 
+                    xsm:size-72 sm:size-28 md:size-32 5xl:size-40 
+                    transition-transform duration-300 hover:scale-105 cursor-pointer"
+                    src={`img/team/${person.imageID}.jpg`}
+                    alt="Avatar"
+                    onClick={() => window.open(person.website, '_blank', 'noopener,noreferrer')}
+                  />
 
-                <div className="grow">
-                  <div>
-              	    <h6 className="h3">
+                  <div className="grow">
+                    <div>
+                      <h6 className="h3">
                         {person.name}
-                    </h6>
-                    <p className="p mt-1 text-xs uppercase text-gray-500 dark:text-neutral-500">
-                      {person.department}
-                    </p>
+                      </h6>
+                      <p className="p mt-1 text-xs uppercase text-gray-500 dark:text-neutral-500">
+                        {person.department}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
+              );
             } else {
               return null; // Si no es "Senior", no renderiza nada
             }
-        })}
+          })}
         </div>
 
         <ul
