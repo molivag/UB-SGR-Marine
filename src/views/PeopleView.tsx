@@ -1,13 +1,20 @@
-// import React from "react";
-import { useState } from "react";
-import { team } from "../../updateINFO/data/team2.ts";
+import MemberDrawer from "../components/TeamMemberDrawer.tsx"
 import Tmember from "../types/Tmember";
 import Member from "../components/TeamMember.tsx";
-import MemberDrawer from "../components/TeamMemberDrawer.tsx"
+import { useEffect, useState } from "react";
 
 function PeoplePage() {
-  const [people] = useState(team);
+
+  const [people, setPeople] = useState<Tmember[]>([])
   const [selectedMember, setSelectedMember] = useState<Tmember | null>(null);
+
+  useEffect(() => {
+    fetch('info/team.json')
+      .then((response) => response.json()) //la response recibida se transforma a json
+      .then((data) => setPeople(data)) //y con la data recibida se setea el state
+      .catch((err) => console.error("Error cargando el JSON:",err))
+  }, []);
+
 
   const handleMemberClick = (member: Tmember) => {
     setSelectedMember(member);
@@ -59,9 +66,9 @@ function PeoplePage() {
 
         <div>
           <p className="mb-4 p text-green-400 text-opacity-90">
-                This is a placeholder text designed to represent the future introductory content for this section of the website. In its finalized version, this paragraph will offer a clear explanation of the purpose of the team page and provide visitors with an overview of what they can expect to find here. The final text will likely describe how this page brings together all the individuals who form part of the group, from senior members and researchers to students and support staff.
+            This is a placeholder text designed to represent the future introductory content for this section of the website. In its finalized version, this paragraph will offer a clear explanation of the purpose of the team page and provide visitors with an overview of what they can expect to find here. The final text will likely describe how this page brings together all the individuals who form part of the group, from senior members and researchers to students and support staff.
 
-                It may also highlight the importance of collaboration within the team and emphasize the diversity of roles, backgrounds, and contributions that help drive the group's mission forward. Additionally, the text could offer context about the team's structure or values, giving visitors a better understanding of who we are and what we do. Until then, this placeholder serves as a visual and spatial stand-in, helping to shape the layout and design of the section as the content continues to develop.
+            It may also highlight the importance of collaboration within the team and emphasize the diversity of roles, backgrounds, and contributions that help drive the group's mission forward. Additionally, the text could offer context about the team's structure or values, giving visitors a better understanding of who we are and what we do. Until then, this placeholder serves as a visual and spatial stand-in, helping to shape the layout and design of the section as the content continues to develop.
 
 
 
