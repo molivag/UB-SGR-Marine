@@ -1,10 +1,17 @@
+import Tproject from "../types/Tproject";
 import { Fragment } from "react/jsx-runtime";
 import ProjectComp from "../components/Projects";
-import { projects } from "../../updateINFO/data/projects.ts"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function ProjectsPage() {
-  const [TheProjects] = useState(projects)
+  const [TheProjects, setTheProjects] = useState<Tproject[]>([]);
+
+
+  useEffect(() => {
+    fetch('info/projects.json')
+      .then((res) => res.json())
+      .then((data) => setTheProjects(data));
+  }, []);
 
 
   return (
