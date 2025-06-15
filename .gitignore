@@ -18,6 +18,7 @@ resources/
 _UBsite/
 dist-ssr
 *.local
+*.htaccess
 
 # Editor directories and files
 .vscode/*
