@@ -4,6 +4,8 @@ import {
   FaLinkedin,
   // FaInstagram,
   // FaEnvelope,
+  FaSquareInstagram,
+  FaGlobe,
   FaBluesky,
   FaGoogleScholar,
 } from "react-icons/fa6";
@@ -59,25 +61,40 @@ function MemberDrawer({ isOpen, onClose, member }: DrawerProps) {
 
               {/* Redes sociales */}
               <div className="flex gap-6">
+                {/* website */}
+                {member.website &&
+                  member.website.trim() !== "" ? (
+                  <a
+                    href={member.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-600 hover:text-teal-800"
+                  >
+                    <FaGlobe size={30} />
+                  </a>
+                ) : null}
+
                 {/* Instagram */}
                 {member.socialmedia_INSTA &&
-                member.socialmedia_INSTA.trim() !== "" ? (
+                  member.socialmedia_INSTA.trim() !== "" ? (
                   <a
                     href={member.socialmedia_INSTA}
                     target="_blank"
                     rel="noopener noreferrer"
+                      className="text-violet-700 hover:text-fuchsia-900"
                   >
-                    <img
-                      src="img/Insta.svg"
-                      alt="Instagram"
-                      className="w-7 h-7 hover:grayscale transition duration-300 cursor-pointer"
-                    />
+                    <FaSquareInstagram size={30} />
+                    {/* <img */}
+                    {/*   src="img/Insta.svg" */}
+                    {/*   alt="Instagram" */}
+                    {/*   className="w-7 h-7 hover:grayscale transition duration-300 cursor-pointer" */}
+                    {/* /> */}
                   </a>
                 ) : null}
 
                 {/* LinkedIn */}
                 {member.socialmedia_IN &&
-                member.socialmedia_IN.trim() !== "" ? (
+                  member.socialmedia_IN.trim() !== "" ? (
                   <a
                     href={member.socialmedia_IN}
                     target="_blank"
@@ -94,7 +111,7 @@ function MemberDrawer({ isOpen, onClose, member }: DrawerProps) {
                     href={member.scholar}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-purple-600 hover:text-purple-800"
+                    className="text-cyan-500 hover:text-cyan-700"
                   >
                     <FaGoogleScholar size={30} />
                   </a>
@@ -114,7 +131,7 @@ function MemberDrawer({ isOpen, onClose, member }: DrawerProps) {
 
                 {/* Bluesky */}
                 {member.socialmedia_BSKY &&
-                member.socialmedia_BSKY.trim() !== "" ? (
+                  member.socialmedia_BSKY.trim() !== "" ? (
                   <a
                     href={member.socialmedia_BSKY}
                     target="_blank"

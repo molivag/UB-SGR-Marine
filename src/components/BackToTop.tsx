@@ -14,7 +14,7 @@ const GoTop = () => {
   }, []);
 
   const GoTop = () => {
-    window.scrollTo({ top: 450, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (

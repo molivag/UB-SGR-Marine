@@ -1,11 +1,14 @@
 // import React from "react";
 
 import { Fragment } from "react/jsx-runtime";
+import HeaderSwip from "../components/HeaderSwip.tsx";
+import HeaderComp from "../components/Header.tsx";
 import Seniors from "../components/TeamSenior.tsx";
 
 function IndexPage() {
   return (
     <Fragment>
+
       <div className="container mx-auto 
           xsm:max-w-screen-xsm 
           sm:max-w-screen-sm 
@@ -22,7 +25,7 @@ function IndexPage() {
           2021 SGR 01271 Grup de Recerca de la Universitat de Barcelona reconegut  per la Generalitat de Catalunya
         </h2>
         <h2 className="h2 mt-3 leading-tight 5xl:hidden">
-          2021 SGR 01271 Grup de Recerca de la Universitat de Barcelona reconegut  per la <br />Generalitat de Catalunya
+          2021 SGR 01271 Grup de Recerca de la Universitat de Barcelona reconegut  per la Generalitat de Catalunya
         </h2>
         <div className="mx-auto ">
           <p className="p mt-20 xsm:text-justify md:text-left">
@@ -52,15 +55,15 @@ function IndexPage() {
               src="img/imagen1.png"
               alt="Organization of the Marine Biodiversity and Evolution Department"
             />
-	    <p className="p text-base text-center text-green-400 text-opacity-90 xsm:text-justify md:text-left px-2">
-              This is a sample text used solely for demonstration purposes. Its goal is to showcase how the applied text styling—such as transparency—appears in relation to the previous image or layout. The content itself has no informational value and can be easily replaced with the final text when available.
-            </p>
+            {/* <p className="p text-base text-center text-green-400 text-opacity-90 xsm:text-justify md:text-left px-2"> */}
+            {/*   This is a sample text used solely for demonstration purposes. Its goal is to showcase how the applied text styling—such as transparency—appears in relation to the previous image or layout. The content itself has no informational value and can be easily replaced with the final text when available. */}
+            {/* </p> */}
           </div>
 
-          <h2 className="h2 mt-20">
-            Senior Members
-          </h2>
-          <Seniors />
+          {/* <h2 className="h2 mt-20"> */}
+          {/*   Senior Members */}
+          {/* </h2> */}
+          {/* <Seniors /> */}
         </div>
       </div>
     </Fragment>

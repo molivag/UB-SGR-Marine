@@ -16,7 +16,7 @@ function Seniors() {
 
   return (
     <div className="py-10 sm:py-10">
-      <div className="mx-auto grid-rows-2 xl:grid-cols-3 gap-20 px-20 
+      <div className="mx-auto grid-rows-2 xl:grid-cols-3 gap-20 px-20  5xl:px-10
     xsm:max-w-full xsm:px-2
     xl:max-w-full xl:px-20 
     3xl:max-w-full 3xl:px-20
@@ -33,11 +33,11 @@ function Seniors() {
                   key={person.name}
                   // items-center --> Agregar al div de abajo si es necesario en estilo
                   className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 "
-                  >
+                >
                   <img
                     className="rounded-lg mx-auto md:mx-0 
-                    xsm:size-72 sm:size-28 md:size-32 5xl:size-40 
-                    transition-transform duration-300 hover:scale-105 cursor-pointer"
+		xsm:size-72 sm:size-28 md:size-32 5xl:size-40 
+		transition-transform duration-300 hover:scale-105 cursor-pointer"
                     src={`img/team/${person.imageID}.jpg`}
                     alt="Avatar"
                     onClick={() => window.open(person.website, '_blank', 'noopener,noreferrer')}

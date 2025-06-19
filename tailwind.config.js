@@ -17,10 +17,13 @@ export default {
 
       },
       colors: {
-        'UBfoothead': '#01204e',
+        // 'UBfoothead': '#01204e',
+        'UBfoothead': '#f0dfc9',
         'UBtitles': '#086375',
         'UBnone': '#bedcd0',
-        'UBfondo': '#f0dfc9',
+        // 'UBfondo': '#f0dfc9',
+        'UBfondo': '#f8f9fa',
+        
 
 // 1	#f0dfc9	// Beige cálido, un poco más saturado
 // 2	#e5cbac	// Arena suave, tono crema oscuro

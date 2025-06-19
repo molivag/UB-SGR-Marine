@@ -24,7 +24,8 @@ const FullDescription: React.FC = () => {
   return (
     <>
       <div
-        className="mx-auto mb-20
+        className="
+          mx-auto mb-20
       	  xsm:max-w-screen-xsm 
       	  sm:max-w-screen-sm 
       	  md:max-w-screen-sm
@@ -59,14 +60,8 @@ const FullDescription: React.FC = () => {
               {" "}
               {project.nameProject}
             </h2>
-            <h3 className="mt-8 h3 mb-20">Funding Agencies</h3>
-            {/* <p className="p">{project.fundingAgency}</p> */}
-            <img
-              className="block sm:w-2/3 md:w-1/2 lg:w-1/2"
-	      src={`/MBE1271/img/projects/${project.imageID_FunAgen}.jpg`}
-              alt={`Image of ${project.fundingAgency}
-	      as a funding agency of the current project`}
-            />
+            <h3 className="mt-8 h3 mb-10">Funding Agencies</h3>
+            <p className="p">{project.fundingAgency}</p>
 
             <hr className="mt-28 mb-2 max-w-32" />
             <div className=" mb-11 ">
@@ -80,15 +75,15 @@ const FullDescription: React.FC = () => {
         </div>
 
         {/* Columna central */}
-        <div className="sm:bt-20 xsm:p-0 p-5 mr-5 xsm:mt-20 md:mt-0 ">
+        <div className="sm:bt-20 xsm:p-0 p-5 mr-5 xsm:mt-20 md:mt-0 border-4 border-dotted border-UBtitles">
           <motion.div
             className="sticky top-0"
             style={{ y }}
             transition={{ type: "spring", stiffness: 40 }}
           >
             <img
-	      loading="lazy"
-	      src={`/MBE1271/img/projects/${project.imageID_logo}.jpg`}
+              loading="lazy"
+              src={`/MBE1271/img/projects/${project.imageID_logo}.jpg`}
               alt={`Image of the ${project.acronym} project`}
               className=" rounded-md"
             />
@@ -114,7 +109,7 @@ const FullDescription: React.FC = () => {
               </span>
             </a>
 
-            <div className="flex gap-6">
+            <div className="flex gap-6 ">
               {/* <hr className="mt-10 border-t border-UBfoothead mb-2 max-w-full" /> */}
               {project.socialNetwork_x && project.socialNetwork_x.trim() !== "" ? (
                 <a
@@ -131,7 +126,7 @@ const FullDescription: React.FC = () => {
                 <a
                   href={project.socialNetwork_inst}
                   target="_blank"
-		  rel="noopener noreferrer"
+                  rel="noopener noreferrer"
                   className="hover:text-gray-300"
                 >
                   <FaInstagram size={30} />
@@ -142,13 +137,37 @@ const FullDescription: React.FC = () => {
         </div>
 
         {/* Columna derecha (contenido largo sin scroll interno) */}
-        <div className=" md:p-4 md:mt-0 md:border-none xsm:p-0 xsm:mt-20 xsm:border-t xsm:border-UBfoothead">
+        <div className=" border-4 border-dotted border-UBtitles md:p-4 md:mt-0 xsm:p-0 xsm:mt-2">
           {[...Array(1)].map((_, i) => (
             <p key={i} className="p text-gray-800 leading-relaxed xsm:mt-5 md:mt-0">
               {project.summary}
             </p>
           ))}
         </div>
+
+      </div>
+      {/* Columna derecha (contenido largo sin scroll interno) */}
+      <div className="border-4 border-dotted border-UBtitles mt-16 5xl:mt-16
+          mb-20 mx-auto           xsm:max-w-screen-xsm 
+          sm:max-w-screen-sm 
+          md:max-w-screen-md
+          lg:max-w-screen-xl
+          xl:max-w-screen-2xl
+          4xl:max-w-screen-4xl
+          5xl:max-w-screen-5xl   ">
+
+        <h2 className="h2 mb-16">Funding Agencies</h2>
+
+        <div className="grid p-0 grid-cols-1 md:grid-cols-3 w-full gap-12">
+
+          <img
+            className="block sm:w-2/3 md:w-1/2 lg:w-1/2 "
+            src={`/MBE1271/img/projects/${project.imageID_FunAgen}.jpg`}
+            alt={`Image of ${project.fundingAgency}
+	      as a funding agency of the current project`}
+          />
+        </div>
+
       </div>
     </>
   );

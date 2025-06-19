@@ -39,8 +39,8 @@ function PeoplePage() {
       </h1>
       <section>
         <div className="grid md:grid-cols-2 xsm:grid-cols-1 mb-5">
-          <div className="mt-5">
-            <img src="img/edifici_nou.jpg" alt="Imagen del Vestibulo" />
+          {/* <div className="mt-5"> */}
+            {/* <img src="img/edifici_nou.jpg" alt="Imagen del Vestibulo" /> */}
             {/* <p className="mb-4 p"> */}
             {/*   Lorem ipsum dolor sit amet consectetur adipisicing elit. */}
             {/*   Expedita repellat non alias facere, corporis cum consequuntur */}
@@ -50,35 +50,35 @@ function PeoplePage() {
             {/*   natus recusandae delectus vel ut sed ab rerum iusto dolorum */}
             {/*   praesentium unde nihil error illum commodi eligendi. Ab? */}
             {/* </p> */}
-          </div>
+          {/* </div> */}
           <div className="mt-5">
-            <aside >
-              {/* <h1 className=" mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-UBtitles md:text-5xl lg:text-6xl "> */}
-              <p className="ml-5 mt-5 mb-4 p text-green-400 text-opacity-90">
-                This is a placeholder text designed to represent the future introductory content for this section of the website. In its finalized version, this paragraph will offer a clear explanation of the purpose of the team page and provide visitors with an overview of what they can expect to find here. The final text will likely describe how this page brings together all the individuals who form part of the group, from senior members and researchers to students and support staff.
-
-                It may also highlight the importance of collaboration within the team and emphasize the diversity of roles, backgrounds, and contributions that help drive the group's mission forward. Additionally, the text could offer context about the team's structure or values, giving visitors a better understanding of who we are and what we do. Until then, this placeholder serves as a visual and spatial stand-in, helping to shape the layout and design of the section as the content continues to develop.
-
-              </p>
-            </aside>
+            {/* <aside > */}
+            {/*   {/* <h1 className=" mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-UBtitles md:text-5xl lg:text-6xl "> */}
+            {/*   <p className="ml-5 mt-5 mb-4 p text-green-400 text-opacity-90"> */}
+            {/*     This is a placeholder text designed to represent the future introductory content for this section of the website. In its finalized version, this paragraph will offer a clear explanation of the purpose of the team page and provide visitors with an overview of what they can expect to find here. The final text will likely describe how this page brings together all the individuals who form part of the group, from senior members and researchers to students and support staff. */}
+            {/**/}
+            {/*     It may also highlight the importance of collaboration within the team and emphasize the diversity of roles, backgrounds, and contributions that help drive the group's mission forward. Additionally, the text could offer context about the team's structure or values, giving visitors a better understanding of who we are and what we do. Until then, this placeholder serves as a visual and spatial stand-in, helping to shape the layout and design of the section as the content continues to develop. */}
+            {/**/}
+            {/*   </p> */}
+            {/* </aside> */}
           </div>
         </div>
 
-        <div>
-          <p className="mb-4 p text-green-400 text-opacity-90">
-            This is a placeholder text designed to represent the future introductory content for this section of the website. In its finalized version, this paragraph will offer a clear explanation of the purpose of the team page and provide visitors with an overview of what they can expect to find here. The final text will likely describe how this page brings together all the individuals who form part of the group, from senior members and researchers to students and support staff.
+        {/* <div> */}
+        {/*   <p className="mb-4 p text-green-400 text-opacity-90"> */}
+        {/*         This is a placeholder text designed to represent the future introductory content for this section of the website. In its finalized version, this paragraph will offer a clear explanation of the purpose of the team page and provide visitors with an overview of what they can expect to find here. The final text will likely describe how this page brings together all the individuals who form part of the group, from senior members and researchers to students and support staff. */}
+        {/**/}
+        {/*         It may also highlight the importance of collaboration within the team and emphasize the diversity of roles, backgrounds, and contributions that help drive the group's mission forward. Additionally, the text could offer context about the team's structure or values, giving visitors a better understanding of who we are and what we do. Until then, this placeholder serves as a visual and spatial stand-in, helping to shape the layout and design of the section as the content continues to develop. */}
+        {/**/}
+        {/**/}
+        {/**/}
+        {/*   </p> */}
+        {/**/}
+        {/* </div> */}
 
-            It may also highlight the importance of collaboration within the team and emphasize the diversity of roles, backgrounds, and contributions that help drive the group's mission forward. Additionally, the text could offer context about the team's structure or values, giving visitors a better understanding of who we are and what we do. Until then, this placeholder serves as a visual and spatial stand-in, helping to shape the layout and design of the section as the content continues to develop.
-
-
-
-          </p>
-
-        </div>
-
-        <h2 className="h2 mt-20 mb-50 mb-20 mx-auto">
-          Members of SGR MBE
-        </h2>
+        {/*  <h2 className="h2 mt-20 mb-50 mb-20 mx-auto"> */}
+        {/*    Members */}
+        {/*  </h2> */}
 
         {/* <h3 className="mt-10 text-4xl font-extrabold text-UBnone"> */}
         {/*   Current Members */}
