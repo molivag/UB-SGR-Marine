@@ -1,9 +1,6 @@
 // import React from "react";
 
 import { Fragment } from "react/jsx-runtime";
-import HeaderSwip from "../components/HeaderSwip.tsx";
-import HeaderComp from "../components/Header.tsx";
-import Seniors from "../components/TeamSenior.tsx";
 
 function IndexPage() {
   return (
