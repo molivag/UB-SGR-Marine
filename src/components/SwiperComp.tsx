@@ -23,19 +23,62 @@ function SwipImages() {
         }}
         loop={true}
         pagination={{
-          dynamicBullets: true,
-	  clickable: true
+          dynamicBullets: false,
+          clickable: true
         }}
         navigation={false}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper "
       >
-      <SwiperSlide> <div className='bg-[url(/img/test1.jpg)] bg-cover bg-center h-full w-full'></div></SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-{/* <SwiperSlide><div className="bg-[url(../../public/img/GiselaM.jpg)] ..."></div></SwiperSlide> */}
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
+        {/* <SwiperSlide> <div className='bg-[url(/img/test1.jpg)] bg-cover bg-center h-full w-full'></div></SwiperSlide> */}
+        <SwiperSlide>
+          <div className="w-full h-full flex items-center justify-center 
+            bg-[url('img/carrusel/car1.jpg')] bg-cover bg-center bg-no-repeat">
+            {/* <span className='font-bold text-5xl'>Slide 1</span> */}
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full h-full flex items-center justify-center 
+            bg-[url('img/carrusel/car2.jpg')] bg-cover bg-center bg-no-repeat">
+            {/* <span className='font-bold text-5xl'>Slide 1</span> */}
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full h-full flex items-center justify-center 
+            bg-[url('img/carrusel/car3.jpg')] bg-cover bg-center bg-no-repeat">
+            {/* <span className='font-bold text-5xl'>Slide 1</span> */}
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full h-full flex items-center justify-center 
+            bg-[url('img/carrusel/car4.jpg')] bg-cover bg-center bg-no-repeat">
+            {/* <span className='font-bold text-5xl'>Slide 1</span> */}
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full h-full flex items-center justify-center 
+            bg-[url('img/carrusel/car5.jpg')] bg-cover bg-center bg-no-repeat">
+            {/* <span className='font-bold text-5xl'>Slide 1</span> */}
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full h-full flex items-center justify-center 
+            bg-[url('img/carrusel/car6.jpg')] bg-cover bg-center bg-no-repeat">
+            {/* <span className='font-bold text-5xl'>Slide 1</span> */}
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full h-full flex items-center justify-center 
+            bg-[url('img/carrusel/car7.jpg')] bg-cover bg-center bg-no-repeat">
+            {/* <span className='font-bold text-5xl'>Slide 1</span> */}
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full h-full flex items-center justify-center 
+            bg-[url('img/carrusel/car8.jpg')] bg-cover bg-center bg-no-repeat">
+            {/* <span className='font-bold text-5xl'>Slide 1</span> */}
+          </div>
+        </SwiperSlide>
       </Swiper>
     </>
   );

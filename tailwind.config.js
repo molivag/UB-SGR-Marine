@@ -17,10 +17,13 @@ export default {
 
       },
       colors: {
-        'UBfoothead': '#01204e',
+        // 'UBfoothead': '#01204e',
+        'UBfoothead': '#f0dfc9',
         'UBtitles': '#086375',
         'UBnone': '#bedcd0',
-        'UBfondo': '#f0dfc9',
+        // 'UBfondo': '#f0dfc9',
+        'UBfondo': '#f8f9fa',
+        
 
 // 1	#f0dfc9	// Beige cálido, un poco más saturado
 // 2	#e5cbac	// Arena suave, tono crema oscuro
@@ -40,7 +43,7 @@ export default {
         '5xl': '2350px', // pantallas desde 2350 y superior
       },
       maxWidth: {
-        'screen-xsm': '300px',
+        'screen-xsm': '350px',
         'screen-3xl': '1600px',
         'screen-4xl': '1700px',
         'screen-5xl': '2200px',

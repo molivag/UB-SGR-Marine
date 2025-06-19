@@ -1,6 +1,6 @@
 // function Member({props}){    ----> entre llaves es desctructuring
-import { FaGoogleScholar } from "react-icons/fa6";
-import { FaOrcid } from "react-icons/fa";
+// import { FaGoogleScholar } from "react-icons/fa6";
+// import { FaOrcid } from "react-icons/fa";
 // import { FiMail } from "react-icons/fi";
 import Tmember from "../types/Tmember";
 
@@ -24,12 +24,10 @@ function Member(prop: {
       <div className="flex justify-center">
         <div className="flex justify-center relative group">
           <img
+            loading="lazy"
             className="w-32 sm:w-44 md:w-48 lg:w-56  xl:w-64 
-	    rounded-3xl for-small for-middle 
-	    shadow-lg 
-	    transition-transform duration-300 transform 
-	    group-hover:scale-105"
-            src={`/img/team/${prop.dataMember.imageID}.jpg`}
+	          rounded-3xl for-small for-middle shadow-lg transition-transform duration-300 transform group-hover:scale-105"
+            src={`img/team/${prop.dataMember.imageID}.jpg`}
             alt={`Photo of ${prop.dataMember.name} `}
           />
           <div
@@ -49,14 +47,14 @@ function Member(prop: {
 
       <div className="flex flex-col items-center col-4 ">
         {/* <h3 className="h3member">{prop.dataMember.name}</h3> */}
-        <h3 className="h3">{prop.dataMember.name}</h3>
-        <h4 className="h4 mb-3">{prop.dataMember.category}</h4>
-        <div className=" w-full">
+        <h3 className="h3 mt-4">{prop.dataMember.name}</h3>
+        <h4 className="h4 mgaia-t mt-3 mb-3">{prop.dataMember.category}</h4>
+        <div className=" w-full flex flex-col items-center text-center ">
           <p>
-            <em>Department</em>: {prop.dataMember.department}
+            {prop.dataMember.department}
           </p>
           <p>
-            <em>Research Group</em>: {prop.dataMember.group}
+            {prop.dataMember.group}
           </p>
           {prop.dataMember.email && (
             <a
@@ -72,19 +70,19 @@ function Member(prop: {
         </div>
 
         <div className="flex gap-x-2 mb-4 mt-4">
-          <a
-            href={`${prop.dataMember.orcid}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaOrcid size={30} className="text-UBtitles" />
-          </a>
-          <a
-            href={`${prop.dataMember.scholar}`}
-            target="_blank"
-          >
-            <FaGoogleScholar size={30} className="text-UBtitles" />
-          </a>
+          {/*   <a */}
+          {/*     href={`${prop.dataMember.orcid}`} */}
+          {/*     target="_blank" */}
+          {/*     rel="noopener noreferrer" */}
+          {/*   > */}
+          {/*     <FaOrcid size={30} className="text-UBtitles" /> */}
+          {/*   </a> */}
+          {/*   <a */}
+          {/*     href={`${prop.dataMember.scholar}`} */}
+          {/*     target="_blank" */}
+          {/*   > */}
+          {/*     <FaGoogleScholar size={30} className="text-UBtitles" /> */}
+          {/*   </a> */}
         </div>
       </div>
     </div>

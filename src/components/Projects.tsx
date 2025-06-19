@@ -22,16 +22,15 @@ function ProjectComp(prop: {
         )}
       >
         <div className="flex-grow ">
-          <h5 className="text-xl text-UBfoothead font-bold tracking-tight dark:text-white">
+          <h5 className="text-xl text-UBtitles font-bold tracking-tight dark:text-white">
             {prop.dataProject.nameProject}
           </h5>
         </div>
         <div>
-          <h6 className="text-UBfoothead font-semibold">Duration</h6>
+          <h6 className="text-UBtitles font-semibold">Duration</h6>
           <p>{prop.dataProject.start} - {prop.dataProject.end}</p>
         </div>
 
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel recusandae veniam iure repudiandae, quod, tempore atque sit culpa blanditiis dolorum sapiente provident? Dicta totam atque eius doloribus vero, similique facilis!</p>
         <div className="mt-4">
           <Link
             // to={"/ScrollLayout"}

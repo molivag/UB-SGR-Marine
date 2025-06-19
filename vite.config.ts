@@ -9,6 +9,8 @@ export default defineConfig({
     react(),
     // tailwindcss(),
   ],
+  base: '/MBE1271/', // 👈 Ruta base según la URL del servidor
+
   build:{
     outDir: '_UBsite'
   }

@@ -14,6 +14,7 @@
   /* <body class="d-flex flex-column h-100"> */
 }
 
+
 @media (min-width: 300px) and (max-width: 600px) {
   .for-small {
     width: 250px !important; /* Ajusta según tu necesidad */
@@ -79,13 +80,35 @@ body {
   .p {
     @apply text-base font-medium sm:text-lg lg:text-xl leading-relaxed lg:leading-loose tracking-normal;
   }
-    @media (min-width: 2350px) {
-    .h1 { font-size: 4.5rem; }
-    .h2 { font-size: 3.75rem; }
-    .h3 { font-size: 3rem; }
-    .h4 { font-size: 2.25rem; }
-    .h5 { font-size: 1.75rem; }
-    .h6 { font-size: 1.5rem; }
-    .p  { font-size: 1.375rem; line-height: 1.8; }
+  @media (min-width: 1736px) {
+    .h1 { font-size: 4rem; }
+    .h2 { font-size: 3.25rem; }
+    .h3 { font-size: 2.5rem; }
+    .h4 { font-size: 2rem; }
+    .h5 { font-size: 1.5rem; }
+    .h6 { font-size: 1.25rem; }
+    .p  { font-size: 1.25rem; line-height: 1.75; }
+  }
+
+  @media (min-width: 1900px) {
+    .h1 { font-size: 4.25rem; }
+    .h2 { font-size: 3.5rem; }
+    .h3 { font-size: 2.75rem; }
+    .h4 { font-size: 2.125rem; }
+    .h5 { font-size: 1.625rem; }
+    .h6 { font-size: 1.375rem; }
+    .p  { font-size: 1.3rem; line-height: 1.8; }
+  }
+
+
+  @media (min-width: 2350px) {
+  .h1 { font-size: 4.5rem; }
+  .h2 { font-size: 3.55rem; }
+  .h3 { font-size: 2.75rem; }
+  .h4 { font-size: 2.0rem; }
+  .h5 { font-size: 1.75rem; }
+  .h6 { font-size: 1.5rem; }
+  .p  { font-size: 1.375rem; line-height: 1.8; }
+  .mgaia-t {margin-top: 0.75rem }
   }
 }

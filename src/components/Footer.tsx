@@ -8,7 +8,7 @@ import {
 
 function FooterComp() {
   return (
-    <footer className="px-4 divide-y bg-UBfoothead text-gray-100">
+    <footer className="px-4 divide-y bg-UBfoothead text-UBtitles">
       <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
         <div className="lg:w-1/3">
           <a
@@ -53,7 +53,8 @@ function FooterComp() {
           {/*   </ul> */}
           {/* </div> */}
           <div className="space-y-3 ml-44 xsm:ml-1 lg:ml-44">
-            <h4 className="h4 text-gray-50">The Site</h4>
+            <h4 className="h4 text-UBtitles hidden sm:block">The Site</h4>
+            <h4 className="h4 text-UBtitles sm:hidden">The Site</h4>
             <ul className="space-y-1">
               <li>
                 <Link to="/" className="hover:text-orange-500">
@@ -73,8 +74,8 @@ function FooterComp() {
             </ul>
           </div>
           <div className="space-y-3 mx-auto xsm:mx-1">
-            <h4 className="h4 text-gray-50 hidden sm:block">The University of Barcelona</h4>
-            <h4 className="h4 text-gray-50 sm:hidden">The UB</h4>
+            <h4 className="h4 text- hidden sm:block">The University of Barcelona</h4>
+            <h4 className="h4 text- sm:hidden">The UB</h4>
 
             <ul className="space-y-1">
               <li>
@@ -103,8 +104,8 @@ function FooterComp() {
             {/* </ul> */}
           </div>
           <div className="space-y-3 ">
-            <h4 className="h4 text-gray-50 hidden sm:block">Social media</h4>
-            <h4 className="h4 text-gray-50 sm:hidden">Follow Us</h4>
+            <h4 className="h4 text-UBtitles hidden sm:block">Social media</h4>
+            <h4 className="h4 text-UBtitles sm:hidden">Follow Us</h4>
             <div className="flex justify-start space-x-3">
               <a
                 rel="noopener noreferrer"
@@ -134,7 +135,7 @@ function FooterComp() {
           </div>
         </div>
       </div>
-      <div className="py-6 text-sm text-center text-gray-400">
+      <div className="py-6 text-sm text-center text-cyan-950 border-t-cyan-950">
         © 2025 Developed by ogmdevlab — design by committee. All rights reserved.
       </div>
     </footer>

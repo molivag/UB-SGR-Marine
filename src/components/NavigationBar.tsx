@@ -5,12 +5,15 @@ function MenuBar() {
   const location = useLocation(); // Obtiene la ruta actual
 
   // Función para aplicar estilos a los enlaces
-  const getLinkClass = (path: string) =>
-    location.pathname === path
-      ? "uppercase font-bold text-lg text-orange-500 px-3 py-2  "
-      : 
-        "uppercase font-bold text-lg text-UBfondo";
+  // const getLinkClass = (path: string) =>
+  //   location.pathname === path
+  //     ? "uppercase font-bold text-xl text-UBfondo px-3 py-2 "
+  //     : "uppercase font-bold text-xl text-UBfondo";
 
+  const getLinkClass = (path: string) =>
+  `uppercase font-bold text-xl text-UBtitles px-3 py-2 transition-transform duration-700 hover:scale-125 ${
+    location.pathname === path ? 'underline' : ''
+  }`;
   return (
     <Navbar fluid rounded className="bg-UBfoothead text-UBtitles py-5 mx-10">
       <Navbar.Brand as={Link} to="/">
