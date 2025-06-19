@@ -19,7 +19,7 @@ function SwipImages() {
         centeredSlides={true}
         autoplay={{
           delay: 3500,
-          disableOnInteraction: true,
+          disableOnInteraction: false,
         }}
         loop={true}
         pagination={{
