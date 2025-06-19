@@ -75,7 +75,7 @@ const FullDescription: React.FC = () => {
         </div>
 
         {/* Columna central */}
-        <div className="sm:bt-20 xsm:p-0 p-5 mr-5 xsm:mt-20 md:mt-0 border-4 border-dotted border-UBtitles">
+        <div className="sm:bt-20 xsm:p-0 p-5 mr-5 xsm:mt-20 md:mt-0 ">
           <motion.div
             className="sticky top-0"
             style={{ y }}
@@ -87,12 +87,7 @@ const FullDescription: React.FC = () => {
               alt={`Image of the ${project.acronym} project`}
               className=" rounded-md"
             />
-            <p className=" p text-base my-5">
-              Small Description related to the picture Small Description related
-              to the picture Small Description related to the picture Small
-              Description related to the picture
-            </p>
-            <hr className="mt-10 border-t border-UBfoothead mb-2 max-w-full" />
+            <hr className="mt-10 mb-2 max-w-full" />
             <h3 className="h3 mt-13 ">Period</h3>
             <p className="p mt-5">
               {project.start} - {project.end}
@@ -137,9 +132,9 @@ const FullDescription: React.FC = () => {
         </div>
 
         {/* Columna derecha (contenido largo sin scroll interno) */}
-        <div className=" border-4 border-dotted border-UBtitles md:p-4 md:mt-0 xsm:p-0 xsm:mt-2">
+        <div className=" md:p-4 md:mt-0 xsm:p-0 xsm:mt-2">
           {[...Array(1)].map((_, i) => (
-            <p key={i} className="p text-gray-800 leading-relaxed xsm:mt-5 md:mt-0">
+            <p key={i} className="p text-justify text-gray-800 leading-relaxed xsm:mt-5 md:mt-0">
               {project.summary}
             </p>
           ))}
@@ -147,7 +142,7 @@ const FullDescription: React.FC = () => {
 
       </div>
       {/* Columna derecha (contenido largo sin scroll interno) */}
-      <div className="border-4 border-dotted border-UBtitles mt-16 5xl:mt-16
+      <div className="mt-16 5xl:mt-16
           mb-20 mx-auto           xsm:max-w-screen-xsm 
           sm:max-w-screen-sm 
           md:max-w-screen-md
@@ -159,14 +154,29 @@ const FullDescription: React.FC = () => {
         <h2 className="h2 mb-16">Funding Agencies</h2>
 
         <div className="grid p-0 grid-cols-1 md:grid-cols-3 w-full gap-12">
+          <picture>
+            <source srcSet={`/MBE1271/img/projects/${project.imageID_FunAgen}.png`} type="image/png" />
+            <source srcSet={`/MBE1271/img/projects/${project.imageID_FunAgen}.jpg`} type="image/jpeg" />
+            <img
+              className="w-full h-auto"
+              src={`/MBE1271/img/projects/${project.imageID_FunAgen}.jpg`}
+              alt={`Image of ${project.fundingAgency} as a funding agency of the current project`}
+            />
+          </picture>
 
-          <img
-            className="block sm:w-2/3 md:w-1/2 lg:w-1/2 "
-            src={`/MBE1271/img/projects/${project.imageID_FunAgen}.jpg`}
-            alt={`Image of ${project.fundingAgency}
-	      as a funding agency of the current project`}
-          />
+
+
+
+
+	      {/*    <img */}
+	      {/*      className="block w-3/4 md:w-full h-auto" */}
+	      {/*      src={`/MBE1271/img/projects/${project.imageID_FunAgen}.jpg`} */}
+	      {/*      alt={`Image of ${project.fundingAgency} */}
+	      {/* as a funding agency of the current project`} */}
+	      {/*    /> */}
         </div>
+
+
 
       </div>
     </>
