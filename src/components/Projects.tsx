@@ -15,7 +15,7 @@ function ProjectComp(prop: {
         className="max-w-md bg-green-50 flex flex-col justify-between h-full"
         renderImage={() => (
           <img
-            src={`img/projects/${prop.dataProject.imageID_logo}.jpg`}
+            src={`img/projects/${prop.dataProject.imageID_logo}.webp`}
             alt={`Logo of the project ${prop.dataProject.projectID}`}
             className="w-full h-auto"
           />

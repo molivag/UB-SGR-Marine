@@ -64,7 +64,7 @@ function HeaderSwip() {
     <header className="relative overflow-y-hidden">
     {/* <header > */}
       <Parallax speed={-23}>
-        <div className="h-[720px] 5xl:h-[980px] -mt-20 bg-cover bg-no-repeat bg-center ">
+        <div className="xsm:h-[600px] h-[720px] 5xl:h-[980px] -mt-20 bg-cover bg-no-repeat bg-center ">
           {/* <div className="h-96 "> */}
           {/* <MoveImages /> */}
           <SwipImages />

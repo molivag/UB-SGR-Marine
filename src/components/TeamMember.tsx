@@ -28,6 +28,7 @@ function Member(prop: {
             className="w-32 sm:w-44 md:w-48 lg:w-56  xl:w-64 
 	          rounded-3xl for-small for-middle shadow-lg transition-transform duration-300 transform group-hover:scale-105"
             src={`img/team/${prop.dataMember.imageID}.jpg`}
+            // src={`img/team/${prop.dataMember.imageID}.webp`}
             alt={`Photo of ${prop.dataMember.name} `}
           />
           <div
@@ -47,8 +48,8 @@ function Member(prop: {
 
       <div className="flex flex-col items-center col-4 ">
         {/* <h3 className="h3member">{prop.dataMember.name}</h3> */}
-        <h3 className="h3 mt-4">{prop.dataMember.name}</h3>
-        <h4 className="h4 mgaia-t mt-3 mb-3">{prop.dataMember.category}</h4>
+        <h4 className="h4 mt-4">{prop.dataMember.name}</h4>
+        <h5 className="h5 mgaia-t mt-3 mb-3 text-UBtitles">{prop.dataMember.category}</h5>
         <div className=" w-full flex flex-col items-center text-center ">
           <p>
             {prop.dataMember.department}

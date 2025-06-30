@@ -10,7 +10,7 @@ function FooterComp() {
   return (
     <footer className="px-4 divide-y bg-UBfoothead text-UBtitles">
       <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/2">
           <a
             rel="noopener noreferrer"
             href="#"
@@ -27,13 +27,11 @@ function FooterComp() {
             {/*   </svg> */}
             {/* </div> */}
             <img
-              src="img/LogoSGR_UB_LAB.png"
-              className="mr-3 h-6 sm:h-9 mx-10 xsm:mx-0 lg:mx-10"
-              alt="SGR UB Lab Logo"
+              src="/MBE1271/img/footerSGRMBE.webp"
+              className="max-w-[80px] w-auto h-auto rounded-md mr-3 sm:h-9 mx-10 xsm:mx-0 lg:mx-10"
+              alt="footer of SGR MBE"
             />
-            <span className="self-center text-2xl font-semibold">
-              SGR UB Lab
-            </span>
+            <h5 className="h5 text-UBtitles text-wrap break-normal">SGR Marine Biodiversity and Evolution</h5>
           </a>
         </div>
         <div className="grid grid-cols-3  text-sm gap-x-2 gap-y-8 lg:w-2/3 sm:grid-cols-3">
@@ -52,9 +50,9 @@ function FooterComp() {
           {/*     </li> */}
           {/*   </ul> */}
           {/* </div> */}
-          <div className="space-y-3 ml-44 xsm:ml-1 lg:ml-44">
-            <h4 className="h4 text-UBtitles hidden sm:block">The Site</h4>
-            <h4 className="h4 text-UBtitles sm:hidden">The Site</h4>
+          <div className="space-y-3 ml-44 xsm:ml-1 lg:ml-44 ">
+            <h5 className="h5 text-UBtitles hidden sm:block">The Site</h5>
+            <h5 className="h5 text-UBtitles sm:hidden">The Site</h5>
             <ul className="space-y-1">
               <li>
                 <Link to="/" className="hover:text-orange-500">
@@ -73,9 +71,9 @@ function FooterComp() {
               </li>
             </ul>
           </div>
-          <div className="space-y-3 mx-auto xsm:mx-1">
-            <h4 className="h4 text- hidden sm:block">The University of Barcelona</h4>
-            <h4 className="h4 text- sm:hidden">The UB</h4>
+          <div className="space-y-3 mx-auto xsm:mx-1 lg:w-96">
+            <h5 className="h5 text- hidden sm:block">The University of Barcelona</h5>
+            <h5 className="h5 text- sm:hidden">The UB</h5>
 
             <ul className="space-y-1">
               <li>
@@ -103,13 +101,13 @@ function FooterComp() {
             {/*   </li> */}
             {/* </ul> */}
           </div>
-          <div className="space-y-3 ">
-            <h4 className="h4 text-UBtitles hidden sm:block">Social media</h4>
-            <h4 className="h4 text-UBtitles sm:hidden">Follow Us</h4>
+          <div className="space-y-3 lg:ml-7 lg:w-64 lg:mx-auto">
+            <h5 className="h5 text-UBtitles hidden sm:block">Social media</h5>
+            <h5 className="h5 text-UBtitles sm:hidden">Follow Us</h5>
             <div className="flex justify-start space-x-3">
               <a
                 rel="noopener noreferrer"
-                href="#"
+                href=""
                 title="Bluesky"
                 className="flex items-center p-1"
               >
@@ -117,7 +115,7 @@ function FooterComp() {
               </a>
               <a
                 rel="noopener noreferrer"
-                href="#"
+                href=""
                 title="Facebook"
                 className="flex items-center p-1"
               >
@@ -125,7 +123,7 @@ function FooterComp() {
               </a>
               <a
                 rel="noopener noreferrer"
-                href="#"
+                href=""
                 title="Instagram"
                 className="flex items-center p-1"
               >

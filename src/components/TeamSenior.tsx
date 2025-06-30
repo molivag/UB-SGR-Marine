@@ -8,7 +8,7 @@ function Seniors() {
   //useEffect(()=>{},[]) una funcion flecha y un array vacio para ejecutarse una unica vez cuando se 
   //monte el componente.
   useEffect(() => {
-    fetch("info/team.json")
+    fetch("/MBE1271/info/team.json")
       .then((response) => response.json())
       .then((data) => setPeople(data))
   }, []);

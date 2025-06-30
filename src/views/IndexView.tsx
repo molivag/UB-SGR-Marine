@@ -48,7 +48,7 @@ function IndexPage() {
 
           <div>
             <img
-              className=" mt-20 mx-auto xsm:size-auto md:w-1/2"
+              className=" mt-20 mx-auto xsm:size-auto md:w-1/2 mb-28"
               src="img/imagen1.png"
               alt="Organization of the Marine Biodiversity and Evolution Department"
             />

@@ -90,7 +90,8 @@ function MemberDrawer({ isOpen, onClose, member }: DrawerProps) {
                     {/*   className="w-7 h-7 hover:grayscale transition duration-300 cursor-pointer" */}
                     {/* /> */}
                   </a>
-                ) : null}
+                ) : null
+                }
 
                 {/* LinkedIn */}
                 {member.socialmedia_IN &&

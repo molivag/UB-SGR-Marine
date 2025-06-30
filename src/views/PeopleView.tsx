@@ -9,7 +9,7 @@ function PeoplePage() {
   const [selectedMember, setSelectedMember] = useState<Tmember | null>(null);
 
   useEffect(() => {
-    fetch('info/team.json')
+    fetch('/MBE1271/info/team.json')
       .then((response) => response.json()) //la response recibida se transforma a json
       .then((data) => setPeople(data)) //y con la data recibida se setea el state
       .catch((err) => console.error("Error cargando el JSON:",err))
@@ -34,7 +34,7 @@ function PeoplePage() {
       4xl:max-w-screen-4xl
       5xl:max-w-screen-5xl">
 
-      <h1 className="h1">
+      <h1 className="h1 mb-24">
         The SGR MBE TEAM
       </h1>
       <section>
