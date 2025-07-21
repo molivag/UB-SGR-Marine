@@ -28,23 +28,9 @@ function FooterComp() {
             <h5 className="h5 text-UBtitles text-wrap break-normal">SGR Marine Biodiversity and Evolution</h5>
           </a>
         </div>
-        <div className="grid grid-cols-3  text-sm gap-x-2 gap-y-8 lg:w-2/3 sm:grid-cols-3">
-          {/* <div className="space-y-3"> */}
-          {/*   <h3 className="tracking-wide uppercase text-gray-50">The UB</h3> */}
-          {/*   <ul className="space-y-1"> */}
-          {/*     <li> */}
-          {/*       <a rel="noopener noreferrer" href="#"> */}
-          {/*         Legal Notice */}
-          {/*       </a> */}
-          {/*     </li> */}
-          {/*     <li> */}
-          {/*       <a rel="noopener noreferrer" href="#"> */}
-          {/*         Coockies */}
-          {/*       </a> */}
-          {/*     </li> */}
-          {/*   </ul> */}
-          {/* </div> */}
-          <div className="space-y-3 ml-44 xsm:ml-1 lg:ml-44 flex flex-col items-center">
+        {/* <div className="grid grid-cols-3  text-sm gap-x-2 gap-y-8 lg:w-2/3 sm:grid-cols-3"> */}
+        <div className="grid grid-cols-1 xsm:grid-cols-3 gap-x-2 gap-y-8 text-sm justify-items-center">
+          <div className="space-y-3 xsm:ml-1 flex flex-col items-center">
             <h5 className="h5 text-UBtitles hidden sm:block">The Site</h5>
             <h5 className="h5 text-UBtitles sm:hidden">The Site</h5>
             <ul className="space-y-1">
@@ -82,20 +68,8 @@ function FooterComp() {
               </li>
             </ul>
 
-            {/* <ul className="space-y-1"> */}
-            {/*   <li> */}
-            {/*     <a rel="noopener noreferrer" href="#"> */}
-            {/*       Privacy */}
-            {/*     </a> */}
-            {/*   </li> */}
-            {/*   <li> */}
-            {/*     <a rel="noopener noreferrer" href="#"> */}
-            {/*       Terms of Service */}
-            {/*     </a> */}
-            {/*   </li> */}
-            {/* </ul> */}
           </div>
-          <div className="space-y-3 lg:ml-7 lg:w-64 lg:mx-auto flex flex-col items-center">
+          <div className="space-y-3 lg:w-64 lg:mx-auto flex flex-col items-center">
             <div className="flex flex-col items-center space-y-3">
             <a
                 href="http://www.ub.edu/irbio/"
