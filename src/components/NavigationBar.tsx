@@ -94,7 +94,7 @@ function MenuBar() {
           <div className="flex items-center space-x-3 min-w-0">
             <img
               src="/MBE1271/img/logoSGRMBE.png"
-              className="w-14 h-auto rounded-md"
+              className="w-24 h-auto rounded-md"
               alt="Logo of SGR MBE Lab"
             />
             <span className="lg:text-3xl text-UBtitles text-sm xsm:text-base sm:text-lg md:text-xl font-semibold break-normal whitespace-normal text-center">

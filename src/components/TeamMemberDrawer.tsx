@@ -48,7 +48,7 @@ function MemberDrawer({ isOpen, onClose, member }: DrawerProps) {
 
             <div className="mt-10 flex flex-col items-center text-center">
               <img
-                src={`img/team/${member.imageID}.jpg`}
+                src={`img/team/${member.imageID}.webp`}
                 alt={member.name}
                 className="w-80 h-80 rounded-md object-cover  shadow-md mb-4"
               />
