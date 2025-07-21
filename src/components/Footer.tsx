@@ -1,10 +1,4 @@
 import { Link } from "react-router-dom";
-import {
-  FaInstagram,
-  FaFacebook,
-  FaBluesky,
-} from "react-icons/fa6";
-
 
 function FooterComp() {
   return (
@@ -13,7 +7,7 @@ function FooterComp() {
         <div className="lg:w-1/2">
           <a
             rel="noopener noreferrer"
-            href="#"
+            href="/"
             className="flex justify-center space-x-3 lg:justify-start"
           >
             {/* <div className="flex items-center justify-center w-12 h-12 rounded-full bg-violet-400"> */}
@@ -27,8 +21,8 @@ function FooterComp() {
             {/*   </svg> */}
             {/* </div> */}
             <img
-              src="/MBE1271/img/footerSGRMBE.webp"
-              className="max-w-[80px] w-auto h-auto rounded-md mr-3 sm:h-9 mx-10 xsm:mx-0 lg:mx-10"
+              src="/MBE1271/img/logoSGRMBE.png"
+              className="w-auto xsm:h-12 rounded-md mr-3 sm:h-20 md:h-24 mx-10 xsm:mx-0 lg:mx-10"
               alt="footer of SGR MBE"
             />
             <h5 className="h5 text-UBtitles text-wrap break-normal">SGR Marine Biodiversity and Evolution</h5>
@@ -50,7 +44,7 @@ function FooterComp() {
           {/*     </li> */}
           {/*   </ul> */}
           {/* </div> */}
-          <div className="space-y-3 ml-44 xsm:ml-1 lg:ml-44 ">
+          <div className="space-y-3 ml-44 xsm:ml-1 lg:ml-44 flex flex-col items-center">
             <h5 className="h5 text-UBtitles hidden sm:block">The Site</h5>
             <h5 className="h5 text-UBtitles sm:hidden">The Site</h5>
             <ul className="space-y-1">
@@ -71,7 +65,7 @@ function FooterComp() {
               </li>
             </ul>
           </div>
-          <div className="space-y-3 mx-auto xsm:mx-1 lg:w-96">
+          <div className="space-y-3 mx-auto xsm:mx-1 lg:w-96 flex flex-col items-center">
             <h5 className="h5 text- hidden sm:block">The University of Barcelona</h5>
             <h5 className="h5 text- sm:hidden">The UB</h5>
 
@@ -101,34 +95,33 @@ function FooterComp() {
             {/*   </li> */}
             {/* </ul> */}
           </div>
-          <div className="space-y-3 lg:ml-7 lg:w-64 lg:mx-auto">
-            <h5 className="h5 text-UBtitles hidden sm:block">Social media</h5>
-            <h5 className="h5 text-UBtitles sm:hidden">Follow Us</h5>
-            <div className="flex justify-start space-x-3">
-              <a
+          <div className="space-y-3 lg:ml-7 lg:w-64 lg:mx-auto flex flex-col items-center">
+            <div className="flex flex-col items-center space-y-3">
+            <a
+                href="http://www.ub.edu/irbio/"
+                target="_blank"
                 rel="noopener noreferrer"
-                href=""
-                title="Bluesky"
-                className="flex items-center p-1"
+                title="Link to irbio website"
               >
-                    <FaBluesky size={20} />
-              </a>
+              <img
+                src="./img/footer/footer1.webp"
+                alt="Descripción imagen uno"
+                className="w-52 h-auto"
+              />
+            </a>
               <a
-                rel="noopener noreferrer"
-                href=""
-                title="Facebook"
-                className="flex items-center p-1"
-              >
-                <FaFacebook size={20} />
+              href="https://web.ub.edu/web/ub/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Enlace a sitio uno"
+            >
+                <img
+                  src="./img/footer/foot2.webp"
+                  alt="Descripción imagen uno"
+                  className="w-48 h-auto"
+                />
               </a>
-              <a
-                rel="noopener noreferrer"
-                href=""
-                title="Instagram"
-                className="flex items-center p-1"
-              >
-                <FaInstagram size={20} />
-              </a>
+
             </div>
           </div>
         </div>
